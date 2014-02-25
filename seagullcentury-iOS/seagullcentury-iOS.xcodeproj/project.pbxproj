@@ -22,6 +22,7 @@
 		CA0FE39218BC3B0A00533D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE37118BC3B0A00533D88 /* UIKit.framework */; };
 		CA0FE39A18BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */; };
 		CA0FE39C18BC3B0A00533D88 /* seagullcentury_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */; };
+		CA0FE3A718BC3CFA00533D88 /* XYZThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE3A618BC3CFA00533D88 /* XYZThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		CA0FE39718BC3B0A00533D88 /* seagullcentury-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "seagullcentury-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		CA0FE39918BC3B0A00533D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = seagullcentury_iOSTests.m; sourceTree = "<group>"; };
+		CA0FE3A518BC3CFA00533D88 /* XYZThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZThirdViewController.h; sourceTree = "<group>"; };
+		CA0FE3A618BC3CFA00533D88 /* XYZThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		CA0FE37318BC3B0A00533D88 /* seagullcentury-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CA0FE3A518BC3CFA00533D88 /* XYZThirdViewController.h */,
+				CA0FE3A618BC3CFA00533D88 /* XYZThirdViewController.m */,
 				CA0FE37C18BC3B0A00533D88 /* XYZAppDelegate.h */,
 				CA0FE37D18BC3B0A00533D88 /* XYZAppDelegate.m */,
 				CA0FE37F18BC3B0A00533D88 /* Main.storyboard */,
@@ -256,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA0FE38418BC3B0A00533D88 /* XYZFirstViewController.m in Sources */,
+				CA0FE3A718BC3CFA00533D88 /* XYZThirdViewController.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZSecondViewController.m in Sources */,
 				CA0FE37A18BC3B0A00533D88 /* main.m in Sources */,
