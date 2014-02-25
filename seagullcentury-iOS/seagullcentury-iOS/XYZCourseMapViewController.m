@@ -1,18 +1,18 @@
 //
-//  XYZFirstViewController.m
+//  XYZThirdViewController.m
 //  seagullcentury-iOS
 //
 //  Created by Brandon Altvater on 2/24/14.
 //  Copyright (c) 2014 Salisbury University. All rights reserved.
 //
 
-#import "XYZFirstViewController.h"
+#import "XYZCourseMapViewController.h"
 
-@interface XYZFirstViewController ()
+@interface XYZCourseMapViewController ()
 
 @end
 
-@implementation XYZFirstViewController
+@implementation XYZCourseMapViewController
 
 - (void)viewDidLoad
 {

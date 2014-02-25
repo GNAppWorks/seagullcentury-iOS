@@ -1,5 +1,5 @@
 //
-//  XYZFirstViewController.h
+//  XYZThirdViewController.h
 //  seagullcentury-iOS
 //
 //  Created by Brandon Altvater on 2/24/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYZFirstViewController : UIViewController
+@interface XYZCourseMapViewController : UIViewController
 
 @end
