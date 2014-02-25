@@ -226,6 +226,8 @@
         <!--Web View Controller-->
         <scene sceneID="VtX-eB-Hd9">
             <objects>
+                <exit id="cJQ-ej-Qxy" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eht-wt-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="6wF-ey-VWP" customClass="XYZWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K0l-4L-ILp"/>
@@ -236,11 +238,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPs-Eh-gO9">
-                                <rect key="frame" x="-20" y="-20" width="360" height="608"/>
+                                <rect key="frame" x="0.0" y="0.0" width="360" height="608"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqJ-fy-jKA">
-                                        <rect key="frame" x="20" y="20" width="320" height="568"/>
+                                    <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqJ-fy-jKA">
+                                        <rect key="frame" x="-2" y="-2" width="330" height="523"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
@@ -249,6 +251,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="rewind" id="wtn-zT-cdc"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6iT-FB-0P6"/>
+                        <barButtonItem systemItem="stop" id="JVj-Tv-txZ"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="gBx-B4-FCb"/>
+                        <barButtonItem systemItem="refresh" id="GSp-KP-LIa"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="jka-re-L7A"/>
+                        <barButtonItem systemItem="fastForward" id="04B-st-WVI"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="ESL-YK-lta">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="zoC-AV-Zuf">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -257,16 +268,17 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="hqJ-fy-jKA" id="jBN-JX-VqK"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eht-wt-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="cJQ-ej-Qxy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2313" y="-90"/>
+            <point key="canvasLocation" x="2365" y="-90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BPQ-8N-JBA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J0r-9h-iMe" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="J0r-9h-iMe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="buk-Zw-MtD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lFa-pe-bNq">
@@ -274,6 +286,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="V5y-EA-T3U">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="6wF-ey-VWP" kind="relationship" relationship="rootViewController" id="dYn-kT-ybo"/>
                     </connections>

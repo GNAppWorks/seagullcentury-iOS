@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSString *fullURL = _urlName;
+    NSString *fullURL = @"http://www.seagullcentury.org";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:requestObj];
