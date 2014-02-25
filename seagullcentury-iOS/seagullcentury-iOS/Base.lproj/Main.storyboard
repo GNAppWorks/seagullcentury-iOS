@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Third View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="f5k-eL-GWV">
-                                <rect key="frame" x="20" y="191" width="280" height="42"/>
+                                <rect key="frame" x="20" y="160" width="280" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the first view controller — an instance of XYZFirstViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hsQ-CO-fZ7">
-                                <rect key="frame" x="20" y="273" width="280" height="88"/>
+                                <rect key="frame" x="20" y="233" width="280" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="CJh-iB-2Zy"/>
                                 </constraints>
@@ -35,10 +35,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="f5k-eL-GWV" firstAttribute="leading" secondItem="WZt-Zi-Rdb" secondAttribute="leading" constant="20" symbolic="YES" id="2FO-we-cnY"/>
-                            <constraint firstItem="hsQ-CO-fZ7" firstAttribute="top" secondItem="f5k-eL-GWV" secondAttribute="bottom" constant="40" id="E6l-eo-C36"/>
+                            <constraint firstItem="hsQ-CO-fZ7" firstAttribute="top" secondItem="f5k-eL-GWV" secondAttribute="bottom" constant="31" id="E6l-eo-C36"/>
                             <constraint firstItem="hsQ-CO-fZ7" firstAttribute="leading" secondItem="f5k-eL-GWV" secondAttribute="leading" id="hoT-jX-zre"/>
                             <constraint firstItem="hsQ-CO-fZ7" firstAttribute="trailing" secondItem="f5k-eL-GWV" secondAttribute="trailing" id="jOz-3l-HcF"/>
-                            <constraint firstItem="niy-Y8-FMx" firstAttribute="top" secondItem="hsQ-CO-fZ7" secondAttribute="bottom" constant="158" id="v2w-4r-h9z"/>
+                            <constraint firstItem="niy-Y8-FMx" firstAttribute="top" secondItem="hsQ-CO-fZ7" secondAttribute="bottom" constant="198" id="v2w-4r-h9z"/>
                             <constraint firstAttribute="trailing" secondItem="f5k-eL-GWV" secondAttribute="trailing" constant="20" symbolic="YES" id="vTM-H6-EcE"/>
                         </constraints>
                     </view>
@@ -142,7 +142,7 @@
         <scene sceneID="Vex-rW-GRa">
             <objects>
                 <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
