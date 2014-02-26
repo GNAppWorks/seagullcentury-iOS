@@ -10,7 +10,7 @@
 
 @interface XYZMenuItem : NSObject
 
-@property NSString *itemName;
-@property NSString *urlName;
+@property (strong, nonatomic) NSString *itemName;
+@property (strong, nonatomic) NSString *urlName;
 
 @end

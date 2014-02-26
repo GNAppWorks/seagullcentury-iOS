@@ -14,13 +14,16 @@
 
 @property NSMutableArray *homeListItems;
 
+
 @end
 
 @implementation XYZHomeViewController
 
+
 -(void) loadInitalData
 {
     // Popluate the array's data in this section
+    
     XYZMenuItem *item1 = [[XYZMenuItem alloc] init];
     item1.itemName = @"Seagull Century Website";
     item1.urlName = @"http://www.seagullcentury.org";
@@ -28,7 +31,7 @@
     
     XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
     item2.itemName = @"Seagull Century Vendors";
-    item2.urlName = @"www.google.com";
+    item2.urlName = @"http://www.google.com";
     
     [self.homeListItems addObject:item2];
     
@@ -129,7 +132,7 @@
  return YES;
  }
  */
-/*
+
  #pragma mark - Navigation
  
  // In a story board-based application, you will often want to do a little preparation before navigation
@@ -138,14 +141,42 @@
  // Get the new view controller using [segue destinationViewController].
  // Pass the selected object to the new view controller.
      
-     if([segue.identifier isEqualToString:@"toWebView"]){
-         UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
-         XYZWebViewController *controller = (XYZWebViewController *)navController.topViewController;
-         controller.urlName = @"www.google.com";
+     
+     
+     
+     //NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
+     
+     if ([segue.identifier isEqualToString:@"toWebView"])
+     {
+         XYZWebViewController *transferViewContoller = [segue destinationViewController];
+         
+         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+         XYZMenuItem *item4 = [[XYZMenuItem alloc] init];
+         
+         item4 = [self.homeListItems objectAtIndex:indexPath.row];
+         NSLog(@"Item URL STRING %@", item4.urlName);
+         transferViewContoller.urlFromtext = item4.urlName;
+         NSLog(@"This is the object I clicked URL: %@", transferViewContoller.urlFromtext);
+         
+         //transferViewContoller.urlFromtext = @"www.google.com";
+         
+         //transferViewContoller.urlFromtext = [self.homeListItems objectAtIndex:indexPath.row];
+         
+         //transferViewContoller.delegate = self;
+         //NSLog(@"%@",[transferViewContoller class]);
+         //NSLog(@"prepareForSegue: %@", segue.identifier);
+
+         
+         //[transferViewContoller setUrlFromtext:@"http://google.com"];
+         
+         
+         //[transferViewContoller loadRequestFromString:passMe];
+         //transferViewContoller.urlFromtext=@"www.google.com";
      }
      
+          
  }
- */
+
 
 
 #pragma mark- Table view delegate

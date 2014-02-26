@@ -218,6 +218,9 @@
                     <navigationItem key="navigationItem" title="Home" id="xU1-HP-XfM">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Bfz-ef-Is6"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="GlW-us-QOz" id="nV8-wD-kAg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbL-fk-CQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,8 +229,6 @@
         <!--Web View Controller-->
         <scene sceneID="VtX-eB-Hd9">
             <objects>
-                <exit id="cJQ-ej-Qxy" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eht-wt-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="6wF-ey-VWP" customClass="XYZWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K0l-4L-ILp"/>
@@ -238,11 +239,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPs-Eh-gO9">
-                                <rect key="frame" x="0.0" y="0.0" width="360" height="608"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="516"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqJ-fy-jKA">
-                                        <rect key="frame" x="-2" y="-2" width="330" height="523"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
@@ -252,16 +253,33 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="rewind" id="wtn-zT-cdc"/>
+                        <barButtonItem systemItem="rewind" id="wtn-zT-cdc">
+                            <connections>
+                                <action selector="goBack" destination="hqJ-fy-jKA" id="RwI-gf-J3F"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="6iT-FB-0P6"/>
-                        <barButtonItem systemItem="stop" id="JVj-Tv-txZ"/>
+                        <barButtonItem systemItem="stop" id="JVj-Tv-txZ">
+                            <connections>
+                                <action selector="stopLoading" destination="hqJ-fy-jKA" id="flU-9y-pqx"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="gBx-B4-FCb"/>
-                        <barButtonItem systemItem="refresh" id="GSp-KP-LIa"/>
+                        <barButtonItem systemItem="refresh" id="GSp-KP-LIa">
+                            <connections>
+                                <action selector="reload" destination="hqJ-fy-jKA" id="MPk-RE-YmN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="jka-re-L7A"/>
-                        <barButtonItem systemItem="fastForward" id="04B-st-WVI"/>
+                        <barButtonItem systemItem="fastForward" id="04B-st-WVI">
+                            <connections>
+                                <action selector="goForward" destination="hqJ-fy-jKA" id="aHU-oO-BXc"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="ESL-YK-lta">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="zoC-AV-Zuf">
+                            <inset key="imageInsets" minX="-4" minY="0.0" maxX="0.0" maxY="-17"/>
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="cJQ-ej-Qxy" kind="unwind" unwindAction="unwindToList:" id="Yo3-6B-BLt"/>
@@ -269,11 +287,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="back" destination="wtn-zT-cdc" id="XJd-u8-s0p"/>
+                        <outlet property="forward" destination="04B-st-WVI" id="enh-aT-AaZ"/>
+                        <outlet property="refresh" destination="GSp-KP-LIa" id="YZd-gn-XAd"/>
+                        <outlet property="stop" destination="JVj-Tv-txZ" id="GdF-75-a00"/>
                         <outlet property="webView" destination="hqJ-fy-jKA" id="jBN-JX-VqK"/>
                     </connections>
                 </viewController>
+                <exit id="cJQ-ej-Qxy" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eht-wt-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2365" y="-90"/>
+            <point key="canvasLocation" x="2349" y="-90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BPQ-8N-JBA">

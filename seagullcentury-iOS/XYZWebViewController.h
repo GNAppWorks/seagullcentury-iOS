@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface XYZWebViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIWebView *webView;
-@property NSString *urlName;
+@property (strong, nonatomic) NSString* urlFromtext;
+
 
 @end
