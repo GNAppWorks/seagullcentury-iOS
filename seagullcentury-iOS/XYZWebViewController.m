@@ -17,7 +17,7 @@ static const CGFloat kSpacer = 2.0f;
 static const CGFloat kLabelFontSize = 12.0f;
 static const CGFloat kAddressHeight = 24.0f;
 
-@interface XYZWebViewController () //<UIWebViewDelegate>
+@interface XYZWebViewController () <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *back;
@@ -43,7 +43,6 @@ static const CGFloat kAddressHeight = 24.0f;
 
 @synthesize urlFromtext;
 
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -59,9 +58,6 @@ static const CGFloat kAddressHeight = 24.0f;
 	// Do any additional setup after loading the view.
     
     self.webView.delegate = self;
-    
-    //self.urlFromtext = @"www.google.com";
-    NSLog(@"urlFromtext is this string: %@", urlFromtext);
     
     /* Create the page title label */
     UINavigationBar *navBar = self.navigationController.navigationBar;
@@ -148,6 +144,7 @@ static const CGFloat kAddressHeight = 24.0f;
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    webView.scalesPageToFit = YES;
     [self updateButtons];
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView
@@ -164,6 +161,8 @@ static const CGFloat kAddressHeight = 24.0f;
     [self updateButtons];
     [self informError:error];
 }
+
+
 
 #pragma mark - Error Handling
 - (void)informError:(NSError *)error

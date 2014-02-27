@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYZHomeViewController : UITableViewController 
+@interface XYZHomeViewController : UITableViewController
 
 
 @end

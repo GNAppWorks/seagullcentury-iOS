@@ -23,6 +23,8 @@
 		CA0FE39A18BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */; };
 		CA0FE39C18BC3B0A00533D88 /* seagullcentury_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */; };
 		CA0FE3A718BC3CFA00533D88 /* XYZCourseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE3A618BC3CFA00533D88 /* XYZCourseMapViewController.m */; };
+		CA52AE5118BED5B100F7091E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA52AE4F18BED42A00F7091E /* CoreLocation.framework */; };
+		CA836FCE18BEC52200AFD051 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA836FCD18BEC52200AFD051 /* MapKit.framework */; };
 		CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */; };
 		CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */; };
 		CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */; };
@@ -62,6 +64,8 @@
 		CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = seagullcentury_iOSTests.m; sourceTree = "<group>"; };
 		CA0FE3A518BC3CFA00533D88 /* XYZCourseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZCourseMapViewController.h; sourceTree = "<group>"; };
 		CA0FE3A618BC3CFA00533D88 /* XYZCourseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZCourseMapViewController.m; sourceTree = "<group>"; };
+		CA52AE4F18BED42A00F7091E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CA836FCD18BEC52200AFD051 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
 		CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZSettingsViewController.m; sourceTree = "<group>"; };
 		CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZMenuItem.h; path = ../XYZMenuItem.h; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA52AE5118BED5B100F7091E /* CoreLocation.framework in Frameworks */,
+				CA836FCE18BEC52200AFD051 /* MapKit.framework in Frameworks */,
 				CA0FE37018BC3B0A00533D88 /* CoreGraphics.framework in Frameworks */,
 				CA0FE37218BC3B0A00533D88 /* UIKit.framework in Frameworks */,
 				CA0FE36E18BC3B0A00533D88 /* Foundation.framework in Frameworks */,
@@ -116,6 +122,8 @@
 		CA0FE36C18BC3B0A00533D88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA52AE4F18BED42A00F7091E /* CoreLocation.framework */,
+				CA836FCD18BEC52200AFD051 /* MapKit.framework */,
 				CA0FE36D18BC3B0A00533D88 /* Foundation.framework */,
 				CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */,
 				CA0FE37118BC3B0A00533D88 /* UIKit.framework */,

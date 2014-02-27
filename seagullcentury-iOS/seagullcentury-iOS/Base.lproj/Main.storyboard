@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Course Map View Controller - Course Map-->
+        <!--Course Map View Controller-->
         <scene sceneID="EUl-k7-xm8">
             <objects>
                 <viewController id="8IJ-yb-9vm" customClass="XYZCourseMapViewController" sceneMemberID="viewController">
@@ -16,37 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Course Map View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="f5k-eL-GWV">
-                                <rect key="frame" x="20" y="160" width="280" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the Course Map view controller — an instance of XYZCourseMapViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hsQ-CO-fZ7">
-                                <rect key="frame" x="20" y="233" width="280" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="CJh-iB-2Zy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4I-Nd-jvQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="f5k-eL-GWV" firstAttribute="leading" secondItem="WZt-Zi-Rdb" secondAttribute="leading" constant="20" symbolic="YES" id="2FO-we-cnY"/>
-                            <constraint firstItem="hsQ-CO-fZ7" firstAttribute="top" secondItem="f5k-eL-GWV" secondAttribute="bottom" constant="31" id="E6l-eo-C36"/>
-                            <constraint firstItem="hsQ-CO-fZ7" firstAttribute="leading" secondItem="f5k-eL-GWV" secondAttribute="leading" id="hoT-jX-zre"/>
-                            <constraint firstItem="hsQ-CO-fZ7" firstAttribute="trailing" secondItem="f5k-eL-GWV" secondAttribute="trailing" id="jOz-3l-HcF"/>
-                            <constraint firstItem="niy-Y8-FMx" firstAttribute="top" secondItem="hsQ-CO-fZ7" secondAttribute="bottom" constant="198" id="v2w-4r-h9z"/>
-                            <constraint firstAttribute="trailing" secondItem="f5k-eL-GWV" secondAttribute="trailing" constant="20" symbolic="YES" id="vTM-H6-EcE"/>
+                            <constraint firstAttribute="bottom" secondItem="R4I-Nd-jvQ" secondAttribute="bottom" id="1Ge-UG-7cK"/>
+                            <constraint firstAttribute="trailing" secondItem="R4I-Nd-jvQ" secondAttribute="trailing" id="4d0-O0-rLQ"/>
+                            <constraint firstItem="R4I-Nd-jvQ" firstAttribute="top" secondItem="WZt-Zi-Rdb" secondAttribute="top" id="Efd-rS-9AB"/>
+                            <constraint firstItem="R4I-Nd-jvQ" firstAttribute="leading" secondItem="WZt-Zi-Rdb" secondAttribute="leading" id="JZF-sc-cHv"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Course Map" image="SeaGullCent-LOGO" id="LLv-2C-CeC"/>
+                    <toolbarItems>
+                        <barButtonItem title="Zoom" id="94j-MG-C8U">
+                            <connections>
+                                <action selector="zoomIn:" destination="8IJ-yb-9vm" id="PwG-0j-DrD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Type" id="ptw-DB-kww">
+                            <connections>
+                                <action selector="changeMapType:" destination="8IJ-yb-9vm" id="bPC-9R-TqJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="bcX-Zg-QfI">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="zf9-Ib-LWX">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="8YX-ce-x5E" kind="modal" animates="NO" id="5Cp-nZ-Y0r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="R4I-Nd-jvQ" id="eq8-CA-aXt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKV-54-RrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="-802"/>
+            <point key="canvasLocation" x="1185" y="-802"/>
         </scene>
         <!--Map View Controller - First-->
         <scene sceneID="W3I-pn-N6e">
@@ -138,6 +147,7 @@
         <scene sceneID="Vex-rW-GRa">
             <objects>
                 <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dDO-Zy-XyO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -147,7 +157,7 @@
                     <connections>
                         <segue destination="nko-u2-eOz" kind="relationship" relationship="viewControllers" id="623-WL-tos"/>
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="2XS-nH-e75"/>
-                        <segue destination="8IJ-yb-9vm" kind="relationship" relationship="viewControllers" id="XLW-AW-Fpv"/>
+                        <segue destination="Om7-gi-xID" kind="relationship" relationship="viewControllers" id="XLW-AW-Fpv"/>
                         <segue destination="3yh-kX-Ygz" kind="relationship" relationship="viewControllers" id="q0r-Gd-ajL"/>
                     </connections>
                 </tabBarController>
@@ -238,19 +248,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPs-Eh-gO9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="516"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPs-Eh-gO9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqJ-fy-jKA">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
+                                    <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqJ-fy-jKA">
+                                        <rect key="frame" x="-1" y="0.0" width="322" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="hqJ-fy-jKA" secondAttribute="height" id="08p-g9-hCS"/>
+                                    <constraint firstAttribute="bottom" secondItem="hqJ-fy-jKA" secondAttribute="bottom" id="3CO-6i-MjX"/>
+                                    <constraint firstAttribute="width" secondItem="hqJ-fy-jKA" secondAttribute="width" constant="-2" id="8kN-ib-cAu"/>
+                                    <constraint firstAttribute="trailing" secondItem="hqJ-fy-jKA" secondAttribute="trailing" constant="-21" id="9Tj-Of-OA0"/>
+                                    <constraint firstItem="hqJ-fy-jKA" firstAttribute="centerY" secondItem="ZPs-Eh-gO9" secondAttribute="centerY" id="J9L-aH-CsM"/>
+                                    <constraint firstItem="hqJ-fy-jKA" firstAttribute="leading" secondItem="ZPs-Eh-gO9" secondAttribute="leading" constant="-1" id="PmC-lU-jgT"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZPs-Eh-gO9" firstAttribute="top" secondItem="fch-VC-OI7" secondAttribute="top" id="TCl-Kd-KtU"/>
+                            <constraint firstAttribute="trailing" secondItem="ZPs-Eh-gO9" secondAttribute="trailing" id="iL1-0I-LfK"/>
+                            <constraint firstItem="ZPs-Eh-gO9" firstAttribute="leading" secondItem="fch-VC-OI7" secondAttribute="leading" id="rqH-TY-DtF"/>
+                            <constraint firstAttribute="bottom" secondItem="ZPs-Eh-gO9" secondAttribute="bottom" id="tFM-8A-4I2"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem systemItem="rewind" id="wtn-zT-cdc">
@@ -321,6 +345,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUO-16-h8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1787" y="-90"/>
+        </scene>
+        <!--Navigation Controller - Course Map-->
+        <scene sceneID="kzU-ky-rc9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Om7-gi-xID" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Course Map" image="SeaGullCent-LOGO" id="LLv-2C-CeC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HFe-Bn-zdK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kbx-ER-2vZ">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="8IJ-yb-9vm" kind="relationship" relationship="rootViewController" id="E9F-pn-Lcj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="820-0e-tHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="-802"/>
         </scene>
     </scenes>
     <resources>

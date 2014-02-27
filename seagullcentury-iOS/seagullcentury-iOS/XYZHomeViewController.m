@@ -44,7 +44,7 @@
 
 -(IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
-    
+    NSLog(@"HI");
 }
 
 - (void)viewDidLoad
@@ -141,37 +141,18 @@
  // Get the new view controller using [segue destinationViewController].
  // Pass the selected object to the new view controller.
      
-     
-     
-     
-     //NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
-     
      if ([segue.identifier isEqualToString:@"toWebView"])
      {
-         XYZWebViewController *transferViewContoller = [segue destinationViewController];
+         XYZWebViewController *transferDestinationView = [[segue.destinationViewController viewControllers] objectAtIndex:0];
          
          NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
          XYZMenuItem *item4 = [[XYZMenuItem alloc] init];
          
          item4 = [self.homeListItems objectAtIndex:indexPath.row];
          NSLog(@"Item URL STRING %@", item4.urlName);
-         transferViewContoller.urlFromtext = item4.urlName;
-         NSLog(@"This is the object I clicked URL: %@", transferViewContoller.urlFromtext);
          
-         //transferViewContoller.urlFromtext = @"www.google.com";
-         
-         //transferViewContoller.urlFromtext = [self.homeListItems objectAtIndex:indexPath.row];
-         
-         //transferViewContoller.delegate = self;
-         //NSLog(@"%@",[transferViewContoller class]);
-         //NSLog(@"prepareForSegue: %@", segue.identifier);
-
-         
-         //[transferViewContoller setUrlFromtext:@"http://google.com"];
-         
-         
-         //[transferViewContoller loadRequestFromString:passMe];
-         //transferViewContoller.urlFromtext=@"www.google.com";
+         transferDestinationView.urlFromtext = item4.urlName;
+    
      }
      
           
