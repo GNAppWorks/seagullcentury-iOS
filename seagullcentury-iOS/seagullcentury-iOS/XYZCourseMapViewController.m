@@ -8,12 +8,13 @@
 
 #import "XYZCourseMapViewController.h"
 
+#define METERS_PER_MILE 1609.344
+
 @interface XYZCourseMapViewController ()
 
 @end
 
 @implementation XYZCourseMapViewController
-@synthesize mapView = _mapView;
 
 
 - (void)viewDidLoad
@@ -21,11 +22,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.mapView.showsUserLocation = YES;
-    
-    
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -36,11 +33,7 @@
 
 - (IBAction)zoomIn:(id)sender
 {
-    MKUserLocation *userLocation = _mapView.userLocation;
-    MKCoordinateRegion region =
-    MKCoordinateRegionMakeWithDistance (
-                                        userLocation.location.coordinate, 20000, 20000);
-    [_mapView setRegion:region animated:NO];
+
 }
 
 - (IBAction)changeMapType:(id)sender
@@ -50,6 +43,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+   
     [super viewWillAppear:animated];
 }
 
@@ -69,9 +63,6 @@
 (UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
-
-
 
 
 #pragma mark - Overriden UIViewController methods

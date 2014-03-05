@@ -8,3 +8,5 @@ seagullcentury-iOS
 	Need to implement the user location on the Built in MapKit
 	Need to research if we can actually accomplish the task 
 
+	Apple uses the Mercator Map Projection
+

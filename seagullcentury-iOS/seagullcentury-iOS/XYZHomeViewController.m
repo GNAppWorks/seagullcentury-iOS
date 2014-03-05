@@ -36,7 +36,8 @@
     [self.homeListItems addObject:item2];
     
     XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
-    item3.itemName = @"More items can be added";
+    item3.itemName = @"Leaf Let Map";
+    item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
     
     [self.homeListItems addObject:item3];
     
@@ -44,7 +45,7 @@
 
 -(IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
-    NSLog(@"HI");
+
 }
 
 - (void)viewDidLoad
@@ -134,7 +135,6 @@
  */
 
  #pragma mark - Navigation
- 
  // In a story board-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {
@@ -158,8 +158,6 @@
           
  }
 
-
-
 #pragma mark- Table view delegate
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -169,6 +167,5 @@
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     
 }
-
 
 @end

@@ -10,6 +10,8 @@
 #import "XYZMenuItem.h"
 #import "XYZHomeViewController.h"
 
+#define VERTICAL_SHIFT 15
+
 static const CGFloat kNavBarHeight = 52.0f;
 static const CGFloat kLabelHeight = 14.0f;
 static const CGFloat kMargin = 10.0f;
@@ -54,16 +56,18 @@ static const CGFloat kAddressHeight = 24.0f;
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
     self.webView.delegate = self;
     
-    /* Create the page title label */
     UINavigationBar *navBar = self.navigationController.navigationBar;
+    
+    /* Create the page title label*/
     CGRect labelFrame = CGRectMake(kMargin, kSpacer, navBar.bounds.size.width - 2 * kMargin, kLabelHeight);
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
-    label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    //label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     label.backgroundColor = [UIColor clearColor];
     label.font = [UIFont systemFontOfSize:12];
     label.textAlignment = NSTextAlignmentCenter;
@@ -73,7 +77,7 @@ static const CGFloat kAddressHeight = 24.0f;
     /* Create the address bar */
     CGRect addressFrame = CGRectMake(kMargin, kSpacer * 2.0 + kLabelHeight, labelFrame.size.width - 20, kAddressHeight);
     UITextField *address = [[UITextField alloc] initWithFrame:CGRectOffset(addressFrame, 25, 0) ];
-    address.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    //address.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     address.borderStyle = UITextBorderStyleRoundedRect;
     address.font = [UIFont systemFontOfSize:17];
     address.keyboardType = UIKeyboardTypeURL;
@@ -85,7 +89,7 @@ static const CGFloat kAddressHeight = 24.0f;
     
     // After setting the urlFromtext call the load Request method
     [self loadRequestFromString:urlFromtext];
-    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -163,7 +167,41 @@ static const CGFloat kAddressHeight = 24.0f;
     [self informError:error];
 }
 
+-(void) layoutPortrait{
+    NSLog(@"In layoutPortrait");
+}
 
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    
+    
+    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        // shift the address bar upwards
+        _addressField.font = [UIFont systemFontOfSize:12];
+        _pageTitle.font = [UIFont systemFontOfSize:10];
+        //[_addressField shiftVertically:-VERTICAL_SHIFT];
+        NSLog(@"Landscape SHIFT");
+        [self.pageTitle setAutoresizesSubviews:YES];
+        [self.pageTitle setAutoresizingMask:UIViewAutoresizingFlexibleHeight| UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth];
+        
+        [self.addressField setAutoresizesSubviews:YES];
+        [self.addressField setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth];
+    }
+    else {
+        //shift the address bar downwards
+        _addressField.font = [UIFont systemFontOfSize:17];
+        _pageTitle.font = [UIFont systemFontOfSize:12];
+        
+        //[_addressField shiftVertically:VERTICAL_SHIFT];
+        NSLog(@"Portrait SHIFT");
+        [self.pageTitle setAutoresizesSubviews:YES];
+        [self.pageTitle setAutoresizingMask:UIViewAutoresizingFlexibleHeight| UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth];
+        
+        [self.addressField setAutoresizesSubviews:YES];
+        [self.addressField setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth];
+    }
+    
+}
 
 #pragma mark - Error Handling
 - (void)informError:(NSError *)error

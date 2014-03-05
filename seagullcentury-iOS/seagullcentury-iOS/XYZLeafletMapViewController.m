@@ -164,5 +164,9 @@ static const CGFloat kAddressHeight = 24.0f;
     [alertView show];
 }
 
+#pragma mark - Overriden UIViewController methods
+- (BOOL)hidesBottomBarWhenPushed {
+    return YES;
+}
 
 @end
