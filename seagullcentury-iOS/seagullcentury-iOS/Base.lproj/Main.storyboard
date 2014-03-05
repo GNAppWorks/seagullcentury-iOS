@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="1185" y="-802"/>
         </scene>
-        <!--Map View Controller - First-->
+        <!--Leaflet Map View Controller-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="XYZSUMapViewController" sceneMemberID="viewController">
+                <viewController id="CZ4-MO-1fc" customClass="XYZLeafletMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VV8-1b-MZN"/>
                         <viewControllerLayoutGuide type="bottom" id="GZh-ow-xHv"/>
@@ -69,37 +69,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="SU Map View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-ve-WU7">
-                                <rect key="frame" x="20" y="158" width="280" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the SUMap view controller — an instance of XYZSUMapViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Hv-Q7E">
-                                <rect key="frame" x="20" y="240" width="280" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="rDj-Sg-2Zj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnY-8d-gZp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="tZ3-Hv-Q7E" secondAttribute="trailing" constant="20" symbolic="YES" id="94m-GQ-azi"/>
-                            <constraint firstItem="tZ3-Hv-Q7E" firstAttribute="top" secondItem="Zhg-ve-WU7" secondAttribute="bottom" constant="40" id="G3o-MK-III"/>
-                            <constraint firstItem="Zhg-ve-WU7" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="20" symbolic="YES" id="JQj-gp-vk2"/>
-                            <constraint firstAttribute="trailing" secondItem="Zhg-ve-WU7" secondAttribute="trailing" constant="20" symbolic="YES" id="eHs-J5-0HT"/>
-                            <constraint firstItem="tZ3-Hv-Q7E" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="20" symbolic="YES" id="lKy-m9-LcB"/>
-                            <constraint firstAttribute="centerY" secondItem="tZ3-Hv-Q7E" secondAttribute="centerY" id="xLM-BA-nZb"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SU Map" image="Salisbury_SU_Fulll_logo" id="u1e-5L-l1D"/>
+                    <navigationItem key="navigationItem" id="wGl-3Q-GL0"/>
+                    <connections>
+                        <outlet property="webView" destination="NnY-8d-gZp" id="ual-8k-TjR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="580"/>
+            <point key="canvasLocation" x="1191" y="580"/>
         </scene>
         <!--Settings View Controller - Settings-->
         <scene sceneID="5HW-WG-OxA">
@@ -156,7 +141,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="nko-u2-eOz" kind="relationship" relationship="viewControllers" id="623-WL-tos"/>
-                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="2XS-nH-e75"/>
+                        <segue destination="LVl-VJ-dOY" kind="relationship" relationship="viewControllers" id="2XS-nH-e75"/>
                         <segue destination="Om7-gi-xID" kind="relationship" relationship="viewControllers" id="XLW-AW-Fpv"/>
                         <segue destination="3yh-kX-Ygz" kind="relationship" relationship="viewControllers" id="q0r-Gd-ajL"/>
                     </connections>
@@ -368,6 +353,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="820-0e-tHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="659" y="-802"/>
+        </scene>
+        <!--Navigation Controller - SU Map-->
+        <scene sceneID="cTc-7Z-F9Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LVl-VJ-dOY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SU Map" image="Salisbury_SU_Fulll_logo" id="u1e-5L-l1D"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xir-a2-yTR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="rootViewController" id="6Cj-eQ-EGi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5r-Cl-CIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="580"/>
         </scene>
     </scenes>
     <resources>

@@ -1,14 +1,12 @@
 //
-//  XYZWebViewController.m
+//  XYZSecondViewController.m
 //  seagullcentury-iOS
 //
-//  Created by Brandon Altvater on 2/25/14.
+//  Created by Brandon Altvater on 2/24/14.
 //  Copyright (c) 2014 Salisbury University. All rights reserved.
 //
 
-#import "XYZWebViewController.h"
-#import "XYZMenuItem.h"
-#import "XYZHomeViewController.h"
+#import "XYZLeafletMapViewController.h"
 
 static const CGFloat kNavBarHeight = 52.0f;
 static const CGFloat kLabelHeight = 14.0f;
@@ -17,9 +15,9 @@ static const CGFloat kSpacer = 2.0f;
 static const CGFloat kLabelFontSize = 12.0f;
 static const CGFloat kAddressHeight = 24.0f;
 
-@interface XYZWebViewController () <UIWebViewDelegate>
+@interface XYZLeafletMapViewController () <UIWebViewDelegate>
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *back;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *stop;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *refresh;
@@ -39,23 +37,13 @@ static const CGFloat kAddressHeight = 24.0f;
 
 @end
 
-@implementation XYZWebViewController
-
-@synthesize urlFromtext;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@implementation XYZLeafletMapViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// Do any additional setup after loading the view, typically from a nib.
+    
     
     self.webView.delegate = self;
     
@@ -84,7 +72,8 @@ static const CGFloat kAddressHeight = 24.0f;
     self.addressField = address;
     
     // After setting the urlFromtext call the load Request method
-    [self loadRequestFromString:urlFromtext];
+    //[self loadRequestFromString:@"http://bl.ocks.org/d3noob/raw/7654694/"];
+    [self loadRequestFromString:@"http://fairview.salisbury.edu/websites/exercise/"];
     
 }
 
@@ -93,7 +82,6 @@ static const CGFloat kAddressHeight = 24.0f;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 #pragma  mark - Loading URLs
 -(void)loadRequestFromAddressField:(id)addressField
@@ -105,8 +93,7 @@ static const CGFloat kAddressHeight = 24.0f;
 -(void)loadRequestFromString:(NSString *)urlString
 {
     NSURL *url = [NSURL URLWithString:urlString];
-    if (!url.scheme)
-    {
+    if (!url.scheme) {
         NSString* modifiedURLString = [NSString stringWithFormat:@"http://%@",urlString];
         url = [NSURL URLWithString:modifiedURLString];
     }
@@ -176,5 +163,6 @@ static const CGFloat kAddressHeight = 24.0f;
                               otherButtonTitles:nil];
     [alertView show];
 }
+
 
 @end

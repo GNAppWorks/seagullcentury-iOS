@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface XYZWebViewController : UIViewController
 
 @property (nonatomic, strong) NSString* urlFromtext;

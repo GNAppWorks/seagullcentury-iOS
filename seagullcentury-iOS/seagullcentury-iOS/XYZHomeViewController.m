@@ -31,7 +31,7 @@
     
     XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
     item2.itemName = @"Seagull Century Vendors";
-    item2.urlName = @"http://www.google.com";
+    item2.urlName = @"http:/orgs.salisbury.edu/math";
     
     [self.homeListItems addObject:item2];
     
