@@ -32,18 +32,30 @@
     XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
     item2.itemName = @"Seagull Century Vendors";
     item2.urlName = @"http:/orgs.salisbury.edu/math";
-    
     [self.homeListItems addObject:item2];
     
+    /*
     XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
     item3.itemName = @"Leaf Let Map";
     item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
-    
     [self.homeListItems addObject:item3];
+    
+    
+    XYZMenuItem *item4 = [[XYZMenuItem alloc] init];
+    item4.itemName = @"100 Mile Route Map";
+    item4.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
+    [self.homeListItems addObject:item4];
+    */
+    
+    
+    
+    
+    
+    
     
 }
 
--(IBAction)unwindToList:(UIStoryboardSegue *)segue
+-(IBAction)unwindToListHomeController:(UIStoryboardSegue *)segue
 {
 
 }

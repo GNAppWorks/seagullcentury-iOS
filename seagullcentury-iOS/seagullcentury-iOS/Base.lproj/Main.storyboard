@@ -1,77 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Om7-gi-xID">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Course Map View Controller-->
-        <scene sceneID="EUl-k7-xm8">
-            <objects>
-                <viewController id="8IJ-yb-9vm" customClass="XYZCourseMapViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uSV-aM-YZm"/>
-                        <viewControllerLayoutGuide type="bottom" id="niy-Y8-FMx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WZt-Zi-Rdb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="bcX-Zg-QfI">
-                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="zf9-Ib-LWX">
-                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="8YX-ce-x5E" kind="modal" animates="NO" id="5Cp-nZ-Y0r"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yKV-54-RrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1185" y="-802"/>
-        </scene>
-        <!--Leaflet Map View Controller-->
-        <scene sceneID="W3I-pn-N6e">
-            <objects>
-                <viewController id="CZ4-MO-1fc" customClass="XYZLeafletMapViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VV8-1b-MZN"/>
-                        <viewControllerLayoutGuide type="bottom" id="GZh-ow-xHv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnY-8d-gZp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="Enp-TV-1Xd"/>
-                        <barButtonItem title="Item" id="WgZ-gk-XuC"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="wGl-3Q-GL0">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Q0U-u3-65B">
-                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="8YX-ce-x5E" kind="modal" animates="NO" id="XMh-0y-QqB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="NnY-8d-gZp" id="ual-8k-TjR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1197" y="580"/>
-        </scene>
         <!--Settings View Controller - Settings-->
         <scene sceneID="5HW-WG-OxA">
             <objects>
@@ -112,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTW-M8-Dgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="1279"/>
+            <point key="canvasLocation" x="81" y="1255"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -127,14 +59,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="nko-u2-eOz" kind="relationship" relationship="viewControllers" id="623-WL-tos"/>
-                        <segue destination="LVl-VJ-dOY" kind="relationship" relationship="viewControllers" id="2XS-nH-e75"/>
                         <segue destination="Om7-gi-xID" kind="relationship" relationship="viewControllers" id="XLW-AW-Fpv"/>
                         <segue destination="3yh-kX-Ygz" kind="relationship" relationship="viewControllers" id="q0r-Gd-ajL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-256" y="-90"/>
+            <point key="canvasLocation" x="-824" y="-114"/>
         </scene>
         <!--Navigation Controller - Home-->
         <scene sceneID="w52-eh-cQO">
@@ -153,7 +84,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDk-pY-aId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="-90"/>
+            <point key="canvasLocation" x="369" y="-114"/>
         </scene>
         <!--Home View Controller - Home-->
         <scene sceneID="cai-Fb-P3S">
@@ -205,7 +136,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbL-fk-CQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1189" y="-90"/>
+            <point key="canvasLocation" x="1013" y="-102"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="VtX-eB-Hd9">
@@ -277,7 +208,7 @@
                             <inset key="imageInsets" minX="-4" minY="0.0" maxX="0.0" maxY="-17"/>
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="cJQ-ej-Qxy" kind="unwind" unwindAction="unwindToList:" id="Yo3-6B-BLt"/>
+                                <segue destination="cJQ-ej-Qxy" kind="unwind" unwindAction="unwindToListHomeController:" id="ebl-zH-vxI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -292,7 +223,7 @@
                 <exit id="cJQ-ej-Qxy" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eht-wt-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2436" y="-90"/>
+            <point key="canvasLocation" x="2260" y="-102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BPQ-8N-JBA">
@@ -315,13 +246,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUO-16-h8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1787" y="-90"/>
+            <point key="canvasLocation" x="1593" y="-102"/>
         </scene>
-        <!--Navigation Controller - Course Map-->
+        <!--Navigation Controller - Maps-->
         <scene sceneID="kzU-ky-rc9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Om7-gi-xID" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Course Map" image="SeaGullCent-LOGO" id="LLv-2C-CeC"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="820-0e-tHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Om7-gi-xID" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Maps" image="SeaGullCent-LOGO" id="LLv-2C-CeC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HFe-Bn-zdK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -333,40 +265,126 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="8IJ-yb-9vm" kind="relationship" relationship="rootViewController" id="E9F-pn-Lcj"/>
+                        <segue destination="vv6-3b-8Wj" kind="relationship" relationship="rootViewController" id="FU5-zQ-qWb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="820-0e-tHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="-802"/>
+            <point key="canvasLocation" x="641" y="-1188"/>
         </scene>
-        <!--Navigation Controller - Leaf Let Map-->
-        <scene sceneID="cTc-7Z-F9Q">
+        <!--Route Selection View Controller-->
+        <scene sceneID="bg7-Nc-0jU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="LVl-VJ-dOY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Leaf Let Map" image="Salisbury_SU_Fulll_logo" id="u1e-5L-l1D"/>
+                <viewController id="vv6-3b-8Wj" customClass="XYZRouteSelectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xjn-fa-t7E"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wq-ZV-hyz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VZu-qc-zPS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-WI-VAX">
+                                <rect key="frame" x="20" y="116" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="100 Miles"/>
+                                    <segment title="50 Miles"/>
+                                    <segment title="100 km"/>
+                                    <segment title="50km"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the route you wish to see" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOP-EG-JsU">
+                                <rect key="frame" x="20" y="87" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adm-GT-I78">
+                                <rect key="frame" x="109" y="166" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to my route">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="clC-oZ-sF9" kind="modal" id="A4C-ps-mY7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMl-GV-YSo">
+                                <rect key="frame" x="10" y="455" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to the Salisbury University Campus Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rMl-GV-YSo" firstAttribute="centerX" secondItem="VZu-qc-zPS" secondAttribute="centerX" id="2yK-MR-9L8"/>
+                            <constraint firstItem="xOP-EG-JsU" firstAttribute="leading" secondItem="M2l-WI-VAX" secondAttribute="leading" id="EdX-J2-Rp0"/>
+                            <constraint firstItem="xOP-EG-JsU" firstAttribute="leading" secondItem="VZu-qc-zPS" secondAttribute="leading" constant="20" symbolic="YES" id="Iif-nu-GGf"/>
+                            <constraint firstItem="M2l-WI-VAX" firstAttribute="top" secondItem="xOP-EG-JsU" secondAttribute="bottom" constant="8" symbolic="YES" id="UvE-PQ-WbZ"/>
+                            <constraint firstItem="adm-GT-I78" firstAttribute="top" secondItem="M2l-WI-VAX" secondAttribute="bottom" constant="22" id="cgW-Rs-iCd"/>
+                            <constraint firstItem="4wq-ZV-hyz" firstAttribute="top" secondItem="rMl-GV-YSo" secondAttribute="bottom" constant="34" id="hVI-rr-n1q"/>
+                            <constraint firstItem="adm-GT-I78" firstAttribute="top" secondItem="VZu-qc-zPS" secondAttribute="top" constant="166" id="iSW-uJ-871"/>
+                            <constraint firstItem="rMl-GV-YSo" firstAttribute="centerX" secondItem="M2l-WI-VAX" secondAttribute="centerX" id="mT5-F5-M1B"/>
+                            <constraint firstItem="rMl-GV-YSo" firstAttribute="centerX" secondItem="adm-GT-I78" secondAttribute="centerX" id="sSl-8M-5ZX"/>
+                            <constraint firstItem="rMl-GV-YSo" firstAttribute="centerX" secondItem="xOP-EG-JsU" secondAttribute="centerX" id="zUF-PC-djO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cOR-ww-bNO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ds5-8I-bHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299" y="-1188"/>
+        </scene>
+        <!--Leaflet Map View Controller-->
+        <scene sceneID="bsr-4H-wdI">
+            <objects>
+                <viewController id="cPf-QI-vqw" customClass="XYZLeafletMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Hl-9d-LDd"/>
+                        <viewControllerLayoutGuide type="bottom" id="gUc-ks-YIq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Psl-ei-XmN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lB4-OA-4L3">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="CsB-Jy-AAW">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="MWA-OF-Spz" kind="unwind" unwindAction="unwindToListRouteController:" id="gdz-Em-LHa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orF-OZ-Vca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MWA-OF-Spz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2449" y="-1188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TIa-e2-wpQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clC-oZ-sF9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xir-a2-yTR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fAO-Iy-CNK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="UvB-lf-odq">
-                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
-                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="rootViewController" id="gQM-u7-ZQ6"/>
+                        <segue destination="cPf-QI-vqw" kind="relationship" relationship="rootViewController" id="bEZ-52-Xt9"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D5r-Cl-CIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99Y-rF-ETw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="580"/>
+            <point key="canvasLocation" x="1887" y="-1188"/>
         </scene>
     </scenes>
     <resources>
         <image name="Basic-Settings-icon" width="32" height="32"/>
-        <image name="Salisbury_SU_Fulll_logo" width="32" height="32"/>
         <image name="SeaGullCent-LOGO" width="32" height="32"/>
         <image name="home_Icon" width="32" height="32"/>
     </resources>
@@ -375,7 +393,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="5Cp-nZ-Y0r"/>
-    </inferredMetricsTieBreakers>
 </document>
