@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IBx-Fa-ZCh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HGR-Nx-rLh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Settings View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yaA-tw-wXO">
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the Settings view controller — an instance of XYZFirstViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CkT-zc-uWb">
-                                <rect key="frame" x="20" y="256" width="280" height="88"/>
+                                <rect key="frame" x="20" y="256" width="280" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTW-M8-Dgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="1255"/>
+            <point key="canvasLocation" x="369" y="1261"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -91,7 +91,7 @@
             <objects>
                 <tableViewController id="80u-no-LnR" customClass="XYZHomeViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GlW-us-QOz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -136,7 +136,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbL-fk-CQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="-102"/>
+            <point key="canvasLocation" x="1011" y="-114"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="VtX-eB-Hd9">
@@ -147,15 +147,15 @@
                         <viewControllerLayoutGuide type="bottom" id="vpg-Ci-naF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fch-VC-OI7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPs-Eh-gO9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqJ-fy-jKA">
-                                        <rect key="frame" x="-1" y="0.0" width="322" height="568"/>
+                                        <rect key="frame" x="-1" y="0.0" width="322" height="480"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
@@ -223,7 +223,7 @@
                 <exit id="cJQ-ej-Qxy" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eht-wt-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="-102"/>
+            <point key="canvasLocation" x="2240" y="-114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BPQ-8N-JBA">
@@ -237,7 +237,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="V5y-EA-T3U">
-                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
@@ -246,7 +246,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUO-16-h8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="-102"/>
+            <point key="canvasLocation" x="1591" y="-114"/>
         </scene>
         <!--Navigation Controller - Maps-->
         <scene sceneID="kzU-ky-rc9">
@@ -269,9 +269,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="820-0e-tHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="-1188"/>
+            <point key="canvasLocation" x="369" y="-1174"/>
         </scene>
-        <!--Route Selection View Controller-->
+        <!--Route Selection View Controller - Route Selection-->
         <scene sceneID="bg7-Nc-0jU">
             <objects>
                 <viewController id="vv6-3b-8Wj" customClass="XYZRouteSelectionViewController" sceneMemberID="viewController">
@@ -280,7 +280,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4wq-ZV-hyz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VZu-qc-zPS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-WI-VAX">
@@ -292,6 +292,9 @@
                                     <segment title="100 km"/>
                                     <segment title="50km"/>
                                 </segments>
+                                <connections>
+                                    <action selector="routePickerControl:" destination="vv6-3b-8Wj" eventType="valueChanged" id="gFN-Ne-42T"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the route you wish to see" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOP-EG-JsU">
                                 <rect key="frame" x="20" y="87" width="280" height="21"/>
@@ -306,11 +309,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="clC-oZ-sF9" kind="modal" id="A4C-ps-mY7"/>
+                                    <segue destination="qnb-JI-yuk" kind="modal" identifier="toRouteView" id="td1-Fa-z38"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMl-GV-YSo">
-                                <rect key="frame" x="10" y="455" width="300" height="30"/>
+                                <rect key="frame" x="10" y="367" width="300" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go to the Salisbury University Campus Map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -331,11 +334,14 @@
                             <constraint firstItem="rMl-GV-YSo" firstAttribute="centerX" secondItem="xOP-EG-JsU" secondAttribute="centerX" id="zUF-PC-djO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cOR-ww-bNO"/>
+                    <navigationItem key="navigationItem" title="Route Selection" id="DXh-yQ-JkH"/>
+                    <connections>
+                        <outlet property="routeSelector" destination="M2l-WI-VAX" id="9WV-zX-2NF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ds5-8I-bHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="-1188"/>
+            <point key="canvasLocation" x="1063" y="-1174"/>
         </scene>
         <!--Leaflet Map View Controller-->
         <scene sceneID="bsr-4H-wdI">
@@ -346,41 +352,60 @@
                         <viewControllerLayoutGuide type="bottom" id="gUc-ks-YIq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Psl-ei-XmN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-ar-91V">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UpD-ar-91V" secondAttribute="bottom" id="HZw-eM-2lR"/>
+                            <constraint firstItem="UpD-ar-91V" firstAttribute="leading" secondItem="Psl-ei-XmN" secondAttribute="leading" id="Ltx-2w-hR5"/>
+                            <constraint firstItem="UpD-ar-91V" firstAttribute="top" secondItem="Psl-ei-XmN" secondAttribute="top" id="OUd-HF-rqs"/>
+                            <constraint firstAttribute="trailing" secondItem="UpD-ar-91V" secondAttribute="trailing" id="ULw-a4-jL3"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lB4-OA-4L3">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="CsB-Jy-AAW">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="rC5-7K-qtS">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="RUe-zg-ezX">
+                            <inset key="imageInsets" minX="-4" minY="0.0" maxX="0.0" maxY="-17"/>
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="MWA-OF-Spz" kind="unwind" unwindAction="unwindToListRouteController:" id="gdz-Em-LHa"/>
+                                <segue destination="MWA-OF-Spz" kind="unwind" unwindAction="unwindToListRouteController:" id="KQQ-EV-eSI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="UpD-ar-91V" id="NWR-M7-gAA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orF-OZ-Vca" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="MWA-OF-Spz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2449" y="-1188"/>
+            <point key="canvasLocation" x="2187" y="-1174"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="TIa-e2-wpQ">
+        <scene sceneID="nBR-hs-GaB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clC-oZ-sF9" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qnb-JI-yuk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fAO-Iy-CNK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dLE-b4-7Ac">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="cPf-QI-vqw" kind="relationship" relationship="rootViewController" id="bEZ-52-Xt9"/>
+                        <segue destination="cPf-QI-vqw" kind="relationship" relationship="rootViewController" id="2O6-UA-Rw9"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="99Y-rF-ETw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20H-1n-XPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887" y="-1188"/>
+            <point key="canvasLocation" x="1661" y="-1174"/>
         </scene>
     </scenes>
     <resources>
@@ -391,6 +416,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

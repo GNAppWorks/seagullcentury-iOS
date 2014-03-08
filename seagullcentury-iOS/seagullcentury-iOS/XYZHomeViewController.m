@@ -34,9 +34,13 @@
     item2.urlName = @"http:/orgs.salisbury.edu/math";
     [self.homeListItems addObject:item2];
     
+<<<<<<< HEAD
     [self updateGeoJSONFiles];
     
     /*
+=======
+ /*
+>>>>>>> brandon
     XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
     item3.itemName = @"Leaf Let Map";
     item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
@@ -47,12 +51,17 @@
     item4.itemName = @"100 Mile Route Map";
     item4.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
     [self.homeListItems addObject:item4];
+<<<<<<< HEAD
     */
 
+=======
+ */
+>>>>>>> brandon
     
 }
 
 
+<<<<<<< HEAD
 
  
  -(void) updateGeoJSONFiles{
@@ -98,6 +107,8 @@
 
 
 
+=======
+>>>>>>> brandon
 -(IBAction)unwindToListHomeController:(UIStoryboardSegue *)segue
 {
 
