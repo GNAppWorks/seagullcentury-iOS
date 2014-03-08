@@ -251,7 +251,6 @@
         <!--Navigation Controller - Maps-->
         <scene sceneID="kzU-ky-rc9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="820-0e-tHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Om7-gi-xID" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Maps" image="SeaGullCent-LOGO" id="LLv-2C-CeC"/>
                     <toolbarItems/>
@@ -268,6 +267,7 @@
                         <segue destination="vv6-3b-8Wj" kind="relationship" relationship="rootViewController" id="FU5-zQ-qWb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="820-0e-tHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="641" y="-1188"/>
         </scene>

@@ -23,9 +23,9 @@
 		CA0FE39C18BC3B0A00533D88 /* seagullcentury_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */; };
 		CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */; };
 		CA3A8ED418CA73CB00CDB866 /* courseMap.html in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ECD18CA73CB00CDB866 /* courseMap.html */; };
-		CA3A8ED518CA73CB00CDB866 /* courseMap.js in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ECE18CA73CB00CDB866 /* courseMap.js */; };
+		CA3A8ED518CA73CB00CDB866 /* courseMap.js in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ECE18CA73CB00CDB866 /* courseMap.js */; };
 		CA3A8ED618CA73CB00CDB866 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ECF18CA73CB00CDB866 /* leaflet.css */; };
-		CA3A8ED718CA73CB00CDB866 /* leaflet.js in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ED018CA73CB00CDB866 /* leaflet.js */; };
+		CA3A8ED718CA73CB00CDB866 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ED018CA73CB00CDB866 /* leaflet.js */; };
 		CA3A8ED918CA73CB00CDB866 /* route.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ED218CA73CB00CDB866 /* route.geojson */; };
 		CA3A8EDA18CA73CB00CDB866 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ED318CA73CB00CDB866 /* style.css */; };
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
@@ -288,6 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3A8ED718CA73CB00CDB866 /* leaflet.js in Resources */,
+				CA3A8ED518CA73CB00CDB866 /* courseMap.js in Resources */,
 				CA3A8EDA18CA73CB00CDB866 /* style.css in Resources */,
 				CA3A8ED418CA73CB00CDB866 /* courseMap.html in Resources */,
 				CA3A8ED918CA73CB00CDB866 /* route.geojson in Resources */,
@@ -319,8 +321,6 @@
 				CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,
-				CA3A8ED718CA73CB00CDB866 /* leaflet.js in Sources */,
-				CA3A8ED518CA73CB00CDB866 /* courseMap.js in Sources */,
 				CA0FE37A18BC3B0A00533D88 /* main.m in Sources */,
 				CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */,
 			);
