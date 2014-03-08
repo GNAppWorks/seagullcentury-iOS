@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7216D1118CB8A0500F09742 /* courseMap.html in Resources */ = {isa = PBXBuildFile; fileRef = A7216D0A18CB8A0500F09742 /* courseMap.html */; };
+		A7216D1218CB8A0500F09742 /* courseMap.js in Sources */ = {isa = PBXBuildFile; fileRef = A7216D0B18CB8A0500F09742 /* courseMap.js */; };
+		A7216D1318CB8A0500F09742 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = A7216D0C18CB8A0500F09742 /* leaflet.css */; };
+		A7216D1418CB8A0500F09742 /* leaflet.js in Sources */ = {isa = PBXBuildFile; fileRef = A7216D0D18CB8A0500F09742 /* leaflet.js */; };
+		A7216D1518CB8A0500F09742 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7216D0E18CB8A0500F09742 /* README.md */; };
+		A7216D1618CB8A0500F09742 /* route.geojson in Resources */ = {isa = PBXBuildFile; fileRef = A7216D0F18CB8A0500F09742 /* route.geojson */; };
+		A7216D1718CB8A0500F09742 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A7216D1018CB8A0500F09742 /* style.css */; };
 		CA0FE36E18BC3B0A00533D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36D18BC3B0A00533D88 /* Foundation.framework */; };
 		CA0FE37218BC3B0A00533D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE37118BC3B0A00533D88 /* UIKit.framework */; };
 		CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */; };
@@ -22,12 +29,6 @@
 		CA0FE39A18BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */; };
 		CA0FE39C18BC3B0A00533D88 /* seagullcentury_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */; };
 		CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */; };
-		CA3A8ED418CA73CB00CDB866 /* courseMap.html in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ECD18CA73CB00CDB866 /* courseMap.html */; };
-		CA3A8ED518CA73CB00CDB866 /* courseMap.js in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ECE18CA73CB00CDB866 /* courseMap.js */; };
-		CA3A8ED618CA73CB00CDB866 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ECF18CA73CB00CDB866 /* leaflet.css */; };
-		CA3A8ED718CA73CB00CDB866 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ED018CA73CB00CDB866 /* leaflet.js */; };
-		CA3A8ED918CA73CB00CDB866 /* route.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ED218CA73CB00CDB866 /* route.geojson */; };
-		CA3A8EDA18CA73CB00CDB866 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CA3A8ED318CA73CB00CDB866 /* style.css */; };
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
 		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
 		CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7918BFADB50089C0BB /* MapKit.framework */; };
@@ -47,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7216D0A18CB8A0500F09742 /* courseMap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = courseMap.html; sourceTree = "<group>"; };
+		A7216D0B18CB8A0500F09742 /* courseMap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = courseMap.js; sourceTree = "<group>"; };
+		A7216D0C18CB8A0500F09742 /* leaflet.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = leaflet.css; sourceTree = "<group>"; };
+		A7216D0D18CB8A0500F09742 /* leaflet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = leaflet.js; sourceTree = "<group>"; };
+		A7216D0E18CB8A0500F09742 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		A7216D0F18CB8A0500F09742 /* route.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = route.geojson; sourceTree = "<group>"; };
+		A7216D1018CB8A0500F09742 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		CA0FE36A18BC3B0A00533D88 /* seagullcentury-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seagullcentury-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0FE36D18BC3B0A00533D88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,12 +78,6 @@
 		CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = seagullcentury_iOSTests.m; sourceTree = "<group>"; };
 		CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZRouteSelectionViewController.h; path = ../XYZRouteSelectionViewController.h; sourceTree = "<group>"; };
 		CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZRouteSelectionViewController.m; path = ../XYZRouteSelectionViewController.m; sourceTree = "<group>"; };
-		CA3A8ECD18CA73CB00CDB866 /* courseMap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = courseMap.html; path = ../../../leaftLet_File/courseMap.html; sourceTree = "<group>"; };
-		CA3A8ECE18CA73CB00CDB866 /* courseMap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = courseMap.js; path = ../../../leaftLet_File/courseMap.js; sourceTree = "<group>"; };
-		CA3A8ECF18CA73CB00CDB866 /* leaflet.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = leaflet.css; path = ../../../leaftLet_File/leaflet.css; sourceTree = "<group>"; };
-		CA3A8ED018CA73CB00CDB866 /* leaflet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = leaflet.js; path = ../../../leaftLet_File/leaflet.js; sourceTree = "<group>"; };
-		CA3A8ED218CA73CB00CDB866 /* route.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = route.geojson; path = ../../../leaftLet_File/route.geojson; sourceTree = "<group>"; };
-		CA3A8ED318CA73CB00CDB866 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = ../../../leaftLet_File/style.css; sourceTree = "<group>"; };
 		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
@@ -112,6 +114,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7216D0918CB8A0500F09742 /* leafLet_File */ = {
+			isa = PBXGroup;
+			children = (
+				A7216D0A18CB8A0500F09742 /* courseMap.html */,
+				A7216D0B18CB8A0500F09742 /* courseMap.js */,
+				A7216D0C18CB8A0500F09742 /* leaflet.css */,
+				A7216D0D18CB8A0500F09742 /* leaflet.js */,
+				A7216D0E18CB8A0500F09742 /* README.md */,
+				A7216D0F18CB8A0500F09742 /* route.geojson */,
+				A7216D1018CB8A0500F09742 /* style.css */,
+			);
+			path = leafLet_File;
+			sourceTree = "<group>";
+		};
 		CA0FE36118BC3B0A00533D88 = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +185,7 @@
 		CA0FE37418BC3B0A00533D88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA3A8ECC18CA73A900CDB866 /* LeafLet Files */,
+				A7216D0918CB8A0500F09742 /* leafLet_File */,
 				CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */,
 				CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */,
 				CA0FE37518BC3B0A00533D88 /* seagullcentury-iOS-Info.plist */,
@@ -196,19 +212,6 @@
 				CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CA3A8ECC18CA73A900CDB866 /* LeafLet Files */ = {
-			isa = PBXGroup;
-			children = (
-				CA3A8ECD18CA73CB00CDB866 /* courseMap.html */,
-				CA3A8ECE18CA73CB00CDB866 /* courseMap.js */,
-				CA3A8ECF18CA73CB00CDB866 /* leaflet.css */,
-				CA3A8ED018CA73CB00CDB866 /* leaflet.js */,
-				CA3A8ED218CA73CB00CDB866 /* route.geojson */,
-				CA3A8ED318CA73CB00CDB866 /* style.css */,
-			);
-			name = "LeafLet Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,13 +291,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3A8ED718CA73CB00CDB866 /* leaflet.js in Resources */,
-				CA3A8ED518CA73CB00CDB866 /* courseMap.js in Resources */,
-				CA3A8EDA18CA73CB00CDB866 /* style.css in Resources */,
-				CA3A8ED418CA73CB00CDB866 /* courseMap.html in Resources */,
-				CA3A8ED918CA73CB00CDB866 /* route.geojson in Resources */,
+				A7216D1518CB8A0500F09742 /* README.md in Resources */,
+				A7216D1718CB8A0500F09742 /* style.css in Resources */,
+				A7216D1118CB8A0500F09742 /* courseMap.html in Resources */,
+				A7216D1618CB8A0500F09742 /* route.geojson in Resources */,
 				CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */,
-				CA3A8ED618CA73CB00CDB866 /* leaflet.css in Resources */,
+				A7216D1318CB8A0500F09742 /* leaflet.css in Resources */,
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
 			);
@@ -321,6 +323,8 @@
 				CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,
+				A7216D1418CB8A0500F09742 /* leaflet.js in Sources */,
+				A7216D1218CB8A0500F09742 /* courseMap.js in Sources */,
 				CA0FE37A18BC3B0A00533D88 /* main.m in Sources */,
 				CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */,
 			);
