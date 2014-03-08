@@ -24,7 +24,7 @@ static const CGFloat kAddressHeight = 24.0f;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *forward;
 
 @property (strong,nonatomic) UILabel *pageTitle;
-@property (strong, nonatomic) UITextField *addressField;
+@property (strong, nonatomic) UILabel *addressField;
 
 - (void)loadRequestFromString:(NSString*)urlString;
 - (void)loadRequestFromAddressField:(id)addressField;
@@ -38,6 +38,7 @@ static const CGFloat kAddressHeight = 24.0f;
 @end
 
 @implementation XYZLeafletMapViewController
+@synthesize urlFromtext;
 
 - (void)viewDidLoad
 {
@@ -53,27 +54,24 @@ static const CGFloat kAddressHeight = 24.0f;
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     label.backgroundColor = [UIColor clearColor];
-    label.font = [UIFont systemFontOfSize:12];
+    label.font = [UIFont systemFontOfSize:13];
     label.textAlignment = NSTextAlignmentCenter;
     [navBar addSubview:label];
     self.pageTitle = label;
     
     /* Create the address bar */
     CGRect addressFrame = CGRectMake(kMargin, kSpacer * 2.0 + kLabelHeight, labelFrame.size.width - 20, kAddressHeight);
-    UITextField *address = [[UITextField alloc] initWithFrame:CGRectOffset(addressFrame, 25, 0) ];
+    UILabel *address = [[UILabel alloc] initWithFrame:CGRectOffset(addressFrame, 25, 0) ];
     address.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    address.borderStyle = UITextBorderStyleRoundedRect;
-    address.font = [UIFont systemFontOfSize:17];
-    address.keyboardType = UIKeyboardTypeURL;
-    address.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    address.clearButtonMode = UITextFieldViewModeWhileEditing;
-    [address addTarget:self action:@selector(loadRequestFromAddressField:) forControlEvents:UIControlEventEditingDidEndOnExit];
+    address.backgroundColor = [UIColor clearColor];
+    address.font = [UIFont systemFontOfSize:16];
+    address.textAlignment = NSTextAlignmentLeft;
     [navBar addSubview:address];
     self.addressField = address;
     
     // After setting the urlFromtext call the load Request method
-    //[self loadRequestFromString:@"http://bl.ocks.org/d3noob/raw/7654694/"];
-    [self loadRequestFromString:@"http://fairview.salisbury.edu/websites/exercise/"];
+    [self loadRequestFromString:urlFromtext];
+    //[self loadRequestFromString:@"http://fairview.salisbury.edu/websites/exercise/"];
     
 }
 
