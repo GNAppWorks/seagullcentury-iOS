@@ -1,18 +1,20 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
-      "size" : "29x29",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
       "scale" : "2x"
     },
     {
       "idiom" : "iphone",
-      "size" : "40x40",
-      "scale" : "2x"
+      "scale" : "1x",
+      "filename" : "Basic-Settings-icon.png"
     },
     {
       "idiom" : "iphone",
-      "size" : "60x60",
       "scale" : "2x"
     }
   ],

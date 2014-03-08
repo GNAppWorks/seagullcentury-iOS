@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYZSecondViewController : UIViewController
+@interface XYZLeafletMapViewController : UIViewController
 
 @end

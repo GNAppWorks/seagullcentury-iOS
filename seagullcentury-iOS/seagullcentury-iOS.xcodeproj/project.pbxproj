@@ -7,22 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7216D1A18CB8E4600F09742 /* courseMap.html in Resources */ = {isa = PBXBuildFile; fileRef = A7216D1918CB8E4600F09742 /* courseMap.html */; };
+		A7216D1C18CB8E7900F09742 /* courseMap.js in Sources */ = {isa = PBXBuildFile; fileRef = A7216D1B18CB8E7900F09742 /* courseMap.js */; };
+		A7216D1E18CB8EAD00F09742 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = A7216D1D18CB8EAD00F09742 /* leaflet.css */; };
+		A7216D2018CB8EC500F09742 /* leaflet.js in Sources */ = {isa = PBXBuildFile; fileRef = A7216D1F18CB8EC500F09742 /* leaflet.js */; };
+		A7216D2218CB8ED300F09742 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A7216D2118CB8ED300F09742 /* style.css */; };
+		A7216D2418CB8EF500F09742 /* routeMap.geojson in Resources */ = {isa = PBXBuildFile; fileRef = A7216D2318CB8EF500F09742 /* routeMap.geojson */; };
 		CA0FE36E18BC3B0A00533D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36D18BC3B0A00533D88 /* Foundation.framework */; };
-		CA0FE37018BC3B0A00533D88 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
 		CA0FE37218BC3B0A00533D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE37118BC3B0A00533D88 /* UIKit.framework */; };
 		CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */; };
 		CA0FE37A18BC3B0A00533D88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE37918BC3B0A00533D88 /* main.m */; };
 		CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE37D18BC3B0A00533D88 /* XYZAppDelegate.m */; };
 		CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE37F18BC3B0A00533D88 /* Main.storyboard */; };
-		CA0FE38418BC3B0A00533D88 /* XYZFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE38318BC3B0A00533D88 /* XYZFirstViewController.m */; };
-		CA0FE38718BC3B0A00533D88 /* XYZSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE38618BC3B0A00533D88 /* XYZSecondViewController.m */; };
+		CA0FE38418BC3B0A00533D88 /* XYZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE38318BC3B0A00533D88 /* XYZHomeViewController.m */; };
+		CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE38618BC3B0A00533D88 /* XYZLeafletMapViewController.m */; };
 		CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE38818BC3B0A00533D88 /* Images.xcassets */; };
 		CA0FE39018BC3B0A00533D88 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE38F18BC3B0A00533D88 /* XCTest.framework */; };
 		CA0FE39118BC3B0A00533D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36D18BC3B0A00533D88 /* Foundation.framework */; };
 		CA0FE39218BC3B0A00533D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE37118BC3B0A00533D88 /* UIKit.framework */; };
 		CA0FE39A18BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */; };
 		CA0FE39C18BC3B0A00533D88 /* seagullcentury_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */; };
-		CA0FE3A718BC3CFA00533D88 /* XYZThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE3A618BC3CFA00533D88 /* XYZThirdViewController.m */; };
+		CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */; };
+		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
+		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
+		CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7918BFADB50089C0BB /* MapKit.framework */; };
+		CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */; };
+		CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */; };
+		CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7216D1918CB8E4600F09742 /* courseMap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = courseMap.html; sourceTree = "<group>"; };
+		A7216D1B18CB8E7900F09742 /* courseMap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = courseMap.js; sourceTree = "<group>"; };
+		A7216D1D18CB8EAD00F09742 /* leaflet.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = leaflet.css; sourceTree = "<group>"; };
+		A7216D1F18CB8EC500F09742 /* leaflet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = leaflet.js; sourceTree = "<group>"; };
+		A7216D2118CB8ED300F09742 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		A7216D2318CB8EF500F09742 /* routeMap.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routeMap.geojson; sourceTree = "<group>"; };
 		CA0FE36A18BC3B0A00533D88 /* seagullcentury-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seagullcentury-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0FE36D18BC3B0A00533D88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,18 +64,26 @@
 		CA0FE37C18BC3B0A00533D88 /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
 		CA0FE37D18BC3B0A00533D88 /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
 		CA0FE38018BC3B0A00533D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA0FE38218BC3B0A00533D88 /* XYZFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZFirstViewController.h; sourceTree = "<group>"; };
-		CA0FE38318BC3B0A00533D88 /* XYZFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZFirstViewController.m; sourceTree = "<group>"; };
-		CA0FE38518BC3B0A00533D88 /* XYZSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZSecondViewController.h; sourceTree = "<group>"; };
-		CA0FE38618BC3B0A00533D88 /* XYZSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZSecondViewController.m; sourceTree = "<group>"; };
+		CA0FE38218BC3B0A00533D88 /* XYZHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZHomeViewController.h; sourceTree = "<group>"; };
+		CA0FE38318BC3B0A00533D88 /* XYZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZHomeViewController.m; sourceTree = "<group>"; };
+		CA0FE38518BC3B0A00533D88 /* XYZLeafletMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZLeafletMapViewController.h; sourceTree = "<group>"; };
+		CA0FE38618BC3B0A00533D88 /* XYZLeafletMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZLeafletMapViewController.m; sourceTree = "<group>"; };
 		CA0FE38818BC3B0A00533D88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA0FE38E18BC3B0A00533D88 /* seagullcentury-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "seagullcentury-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0FE38F18BC3B0A00533D88 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CA0FE39718BC3B0A00533D88 /* seagullcentury-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "seagullcentury-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		CA0FE39918BC3B0A00533D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = seagullcentury_iOSTests.m; sourceTree = "<group>"; };
-		CA0FE3A518BC3CFA00533D88 /* XYZThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZThirdViewController.h; sourceTree = "<group>"; };
-		CA0FE3A618BC3CFA00533D88 /* XYZThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZThirdViewController.m; sourceTree = "<group>"; };
+		CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZRouteSelectionViewController.h; path = ../XYZRouteSelectionViewController.h; sourceTree = "<group>"; };
+		CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZRouteSelectionViewController.m; path = ../XYZRouteSelectionViewController.m; sourceTree = "<group>"; };
+		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
+		CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZSettingsViewController.m; sourceTree = "<group>"; };
+		CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZMenuItem.h; path = ../XYZMenuItem.h; sourceTree = "<group>"; };
+		CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZMenuItem.m; path = ../XYZMenuItem.m; sourceTree = "<group>"; };
+		CAB9DB2118BD165D00A1E8EE /* XYZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZWebViewController.h; path = ../XYZWebViewController.h; sourceTree = "<group>"; };
+		CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZWebViewController.m; path = ../XYZWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0FE37018BC3B0A00533D88 /* CoreGraphics.framework in Frameworks */,
+				CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */,
+				CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */,
+				CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */,
 				CA0FE37218BC3B0A00533D88 /* UIKit.framework in Frameworks */,
 				CA0FE36E18BC3B0A00533D88 /* Foundation.framework in Frameworks */,
 			);
@@ -85,13 +112,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7216D1818CB8DDC00F09742 /* Leaflet */ = {
+			isa = PBXGroup;
+			children = (
+				A7216D1918CB8E4600F09742 /* courseMap.html */,
+				A7216D1B18CB8E7900F09742 /* courseMap.js */,
+				A7216D1D18CB8EAD00F09742 /* leaflet.css */,
+				A7216D1F18CB8EC500F09742 /* leaflet.js */,
+				A7216D2118CB8ED300F09742 /* style.css */,
+				A7216D2318CB8EF500F09742 /* routeMap.geojson */,
+			);
+			name = Leaflet;
+			sourceTree = "<group>";
+		};
 		CA0FE36118BC3B0A00533D88 = {
 			isa = PBXGroup;
 			children = (
-				CA0FE37318BC3B0A00533D88 /* seagullcentury-iOS */,
-				CA0FE39518BC3B0A00533D88 /* seagullcentury-iOSTests */,
 				CA0FE36C18BC3B0A00533D88 /* Frameworks */,
 				CA0FE36B18BC3B0A00533D88 /* Products */,
+				CA0FE37318BC3B0A00533D88 /* seagullcentury-iOS */,
+				CA0FE39518BC3B0A00533D88 /* seagullcentury-iOSTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +147,8 @@
 		CA0FE36C18BC3B0A00533D88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CAB70A7918BFADB50089C0BB /* MapKit.framework */,
+				CAB70A7618BFAD920089C0BB /* CoreLocation.framework */,
 				CA0FE36D18BC3B0A00533D88 /* Foundation.framework */,
 				CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */,
 				CA0FE37118BC3B0A00533D88 /* UIKit.framework */,
@@ -118,17 +160,21 @@
 		CA0FE37318BC3B0A00533D88 /* seagullcentury-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CA0FE3A518BC3CFA00533D88 /* XYZThirdViewController.h */,
-				CA0FE3A618BC3CFA00533D88 /* XYZThirdViewController.m */,
+				CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */,
+				CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */,
+				CA0FE38818BC3B0A00533D88 /* Images.xcassets */,
+				CA0FE37F18BC3B0A00533D88 /* Main.storyboard */,
+				CA0FE37418BC3B0A00533D88 /* Supporting Files */,
 				CA0FE37C18BC3B0A00533D88 /* XYZAppDelegate.h */,
 				CA0FE37D18BC3B0A00533D88 /* XYZAppDelegate.m */,
-				CA0FE37F18BC3B0A00533D88 /* Main.storyboard */,
-				CA0FE38218BC3B0A00533D88 /* XYZFirstViewController.h */,
-				CA0FE38318BC3B0A00533D88 /* XYZFirstViewController.m */,
-				CA0FE38518BC3B0A00533D88 /* XYZSecondViewController.h */,
-				CA0FE38618BC3B0A00533D88 /* XYZSecondViewController.m */,
-				CA0FE38818BC3B0A00533D88 /* Images.xcassets */,
-				CA0FE37418BC3B0A00533D88 /* Supporting Files */,
+				CA0FE38218BC3B0A00533D88 /* XYZHomeViewController.h */,
+				CA0FE38318BC3B0A00533D88 /* XYZHomeViewController.m */,
+				CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */,
+				CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */,
+				CA0FE38518BC3B0A00533D88 /* XYZLeafletMapViewController.h */,
+				CA0FE38618BC3B0A00533D88 /* XYZLeafletMapViewController.m */,
+				CAB9DB2118BD165D00A1E8EE /* XYZWebViewController.h */,
+				CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */,
 			);
 			path = "seagullcentury-iOS";
 			sourceTree = "<group>";
@@ -136,6 +182,9 @@
 		CA0FE37418BC3B0A00533D88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7216D1818CB8DDC00F09742 /* Leaflet */,
+				CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */,
+				CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */,
 				CA0FE37518BC3B0A00533D88 /* seagullcentury-iOS-Info.plist */,
 				CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */,
 				CA0FE37918BC3B0A00533D88 /* main.m */,
@@ -239,7 +288,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7216D1A18CB8E4600F09742 /* courseMap.html in Resources */,
+				A7216D2218CB8ED300F09742 /* style.css in Resources */,
 				CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */,
+				A7216D1E18CB8EAD00F09742 /* leaflet.css in Resources */,
+				A7216D2418CB8EF500F09742 /* routeMap.geojson in Resources */,
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
 			);
@@ -260,11 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0FE38418BC3B0A00533D88 /* XYZFirstViewController.m in Sources */,
-				CA0FE3A718BC3CFA00533D88 /* XYZThirdViewController.m in Sources */,
+				CA0FE38418BC3B0A00533D88 /* XYZHomeViewController.m in Sources */,
+				CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */,
+				CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */,
+				CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
-				CA0FE38718BC3B0A00533D88 /* XYZSecondViewController.m in Sources */,
+				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,
+				A7216D2018CB8EC500F09742 /* leaflet.js in Sources */,
+				A7216D1C18CB8E7900F09742 /* courseMap.js in Sources */,
 				CA0FE37A18BC3B0A00533D88 /* main.m in Sources */,
+				CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +531,7 @@
 				CA0FE3A118BC3B0A00533D88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA0FE3A218BC3B0A00533D88 /* Build configuration list for PBXNativeTarget "seagullcentury-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +540,7 @@
 				CA0FE3A418BC3B0A00533D88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
