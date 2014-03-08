@@ -36,7 +36,6 @@ typedef NS_ENUM(NSInteger, ROUTE){
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    urlRoute = @"http://fairview.salisbury.edu/websites/exercise/";
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,8 +60,13 @@ typedef NS_ENUM(NSInteger, ROUTE){
     if ([segue.identifier isEqualToString:@"toRouteView"])
     {
         XYZLeafletMapViewController *vc = [[segue.destinationViewController viewControllers] objectAtIndex:0];
-        vc.urlFromtext = urlRoute;
-        NSLog(@"Item URL STRING %@",vc.urlFromtext);
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"courseMap" ofType:@"html" inDirectory:@"leaftLet_File"];
+        NSURL *url = [NSURL fileURLWithPath:path];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        
+        vc.urlFromtext = request;
+        NSLog(@"Item %@",vc.urlFromtext);
         
         
     }
@@ -75,20 +79,20 @@ typedef NS_ENUM(NSInteger, ROUTE){
 {
     switch (self.routeSelector.selectedSegmentIndex) {
         case MILE100:
-            urlRoute = @"http://fairview.salisbury.edu/websites/exercise/";
-            NSLog(@"100 Mile Route Selected");
+           
+            //NSLog(@"100 Mile Route Selected");
             break;
         case MILE50:
-            urlRoute = @"www.google.com";
-            NSLog(@"50 Mile Route Selected");
+            
+            //NSLog(@"50 Mile Route Selected");
             break;
         case METRIC100:
-            urlRoute = @"www.salisbury.edu";
-            NSLog(@"100 KM Route Selected");
+           
+            //NSLog(@"100 KM Route Selected");
             break;
         case METRIC50:
-            urlRoute = @"www.yahoo.com";
-            NSLog(@"50 KM Route Selected");
+           
+            //NSLog(@"50 KM Route Selected");
             break;
         default:
             break;

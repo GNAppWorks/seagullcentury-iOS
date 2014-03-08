@@ -10,6 +10,6 @@
 
 @interface XYZLeafletMapViewController : UIViewController
 
-@property (nonatomic, strong) NSString* urlFromtext;
+@property (nonatomic, strong) NSURLRequest* urlFromtext;
 
 @end

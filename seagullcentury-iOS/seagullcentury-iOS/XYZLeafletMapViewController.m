@@ -18,11 +18,6 @@ static const CGFloat kAddressHeight = 24.0f;
 @interface XYZLeafletMapViewController () <UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *back;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *stop;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *refresh;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *forward;
-
 @property (strong,nonatomic) UILabel *pageTitle;
 @property (strong, nonatomic) UILabel *addressField;
 
@@ -30,7 +25,6 @@ static const CGFloat kAddressHeight = 24.0f;
 - (void)loadRequestFromAddressField:(id)addressField;
 - (void)updateAddress:(NSURLRequest*)request;
 
-- (void)updateButtons;
 - (void)updateTitle:(UIWebView*)aWebView;
 
 - (void)informError:(NSError*)error;
@@ -38,13 +32,12 @@ static const CGFloat kAddressHeight = 24.0f;
 @end
 
 @implementation XYZLeafletMapViewController
-@synthesize urlFromtext;
+@synthesize urlFromtext, webView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
     
     self.webView.delegate = self;
     
@@ -69,9 +62,7 @@ static const CGFloat kAddressHeight = 24.0f;
     //[navBar addSubview:address];
     //self.addressField = address;
     
-    // After setting the urlFromtext call the load Request method
-    [self loadRequestFromString:urlFromtext];
-    //[self loadRequestFromString:@"http://fairview.salisbury.edu/websites/exercise/"];
+    [webView loadRequest:urlFromtext];
     
 }
 
@@ -107,13 +98,6 @@ static const CGFloat kAddressHeight = 24.0f;
 }
 
 #pragma mark - Updating the UI
--(void)updateButtons
-{
-    self.forward.enabled = self.webView.canGoForward;
-    self.back.enabled = self.webView.canGoBack;
-    self.stop.enabled = self.webView.loading;
-}
-
 -(void)updateTitle:(UIWebView *)aWebView
 {
     NSString* pageTitle = [aWebView stringByEvaluatingJavaScriptFromString:@"document.title"];
@@ -130,25 +114,22 @@ static const CGFloat kAddressHeight = 24.0f;
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    webView.scalesPageToFit = YES;
-    [self updateButtons];
+    self.webView.scalesPageToFit = YES;
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    [self updateButtons];
-    [self updateTitle:webView];
-    [self updateAddress:[webView request]];
+    [self updateTitle:self.webView];
+    //[self updateAddress:[self.webView request]];
+    
+    
 }
 
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    [self updateButtons];
     [self informError:error];
 }
-
-
 
 #pragma mark - Error Handling
 - (void)informError:(NSError *)error
