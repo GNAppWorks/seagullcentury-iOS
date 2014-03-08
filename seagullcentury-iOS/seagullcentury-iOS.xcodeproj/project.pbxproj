@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7216D1118CB8A0500F09742 /* courseMap.html in Resources */ = {isa = PBXBuildFile; fileRef = A7216D0A18CB8A0500F09742 /* courseMap.html */; };
-		A7216D1218CB8A0500F09742 /* courseMap.js in Sources */ = {isa = PBXBuildFile; fileRef = A7216D0B18CB8A0500F09742 /* courseMap.js */; };
-		A7216D1318CB8A0500F09742 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = A7216D0C18CB8A0500F09742 /* leaflet.css */; };
-		A7216D1418CB8A0500F09742 /* leaflet.js in Sources */ = {isa = PBXBuildFile; fileRef = A7216D0D18CB8A0500F09742 /* leaflet.js */; };
-		A7216D1518CB8A0500F09742 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7216D0E18CB8A0500F09742 /* README.md */; };
-		A7216D1618CB8A0500F09742 /* route.geojson in Resources */ = {isa = PBXBuildFile; fileRef = A7216D0F18CB8A0500F09742 /* route.geojson */; };
-		A7216D1718CB8A0500F09742 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A7216D1018CB8A0500F09742 /* style.css */; };
 		CA0FE36E18BC3B0A00533D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36D18BC3B0A00533D88 /* Foundation.framework */; };
 		CA0FE37218BC3B0A00533D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE37118BC3B0A00533D88 /* UIKit.framework */; };
 		CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */; };
@@ -48,13 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A7216D0A18CB8A0500F09742 /* courseMap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = courseMap.html; sourceTree = "<group>"; };
-		A7216D0B18CB8A0500F09742 /* courseMap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = courseMap.js; sourceTree = "<group>"; };
-		A7216D0C18CB8A0500F09742 /* leaflet.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = leaflet.css; sourceTree = "<group>"; };
-		A7216D0D18CB8A0500F09742 /* leaflet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = leaflet.js; sourceTree = "<group>"; };
-		A7216D0E18CB8A0500F09742 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		A7216D0F18CB8A0500F09742 /* route.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = route.geojson; sourceTree = "<group>"; };
-		A7216D1018CB8A0500F09742 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		CA0FE36A18BC3B0A00533D88 /* seagullcentury-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seagullcentury-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0FE36D18BC3B0A00533D88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,20 +100,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7216D0918CB8A0500F09742 /* leafLet_File */ = {
-			isa = PBXGroup;
-			children = (
-				A7216D0A18CB8A0500F09742 /* courseMap.html */,
-				A7216D0B18CB8A0500F09742 /* courseMap.js */,
-				A7216D0C18CB8A0500F09742 /* leaflet.css */,
-				A7216D0D18CB8A0500F09742 /* leaflet.js */,
-				A7216D0E18CB8A0500F09742 /* README.md */,
-				A7216D0F18CB8A0500F09742 /* route.geojson */,
-				A7216D1018CB8A0500F09742 /* style.css */,
-			);
-			path = leafLet_File;
-			sourceTree = "<group>";
-		};
 		CA0FE36118BC3B0A00533D88 = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +157,6 @@
 		CA0FE37418BC3B0A00533D88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A7216D0918CB8A0500F09742 /* leafLet_File */,
 				CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */,
 				CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */,
 				CA0FE37518BC3B0A00533D88 /* seagullcentury-iOS-Info.plist */,
@@ -291,12 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7216D1518CB8A0500F09742 /* README.md in Resources */,
-				A7216D1718CB8A0500F09742 /* style.css in Resources */,
-				A7216D1118CB8A0500F09742 /* courseMap.html in Resources */,
-				A7216D1618CB8A0500F09742 /* route.geojson in Resources */,
 				CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */,
-				A7216D1318CB8A0500F09742 /* leaflet.css in Resources */,
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
 			);
@@ -323,8 +289,6 @@
 				CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,
-				A7216D1418CB8A0500F09742 /* leaflet.js in Sources */,
-				A7216D1218CB8A0500F09742 /* courseMap.js in Sources */,
 				CA0FE37A18BC3B0A00533D88 /* main.m in Sources */,
 				CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */,
 			);
