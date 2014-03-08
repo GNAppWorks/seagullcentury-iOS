@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7216D1A18CB8E4600F09742 /* courseMap.html in Resources */ = {isa = PBXBuildFile; fileRef = A7216D1918CB8E4600F09742 /* courseMap.html */; };
-		A7216D1C18CB8E7900F09742 /* courseMap.js in Sources */ = {isa = PBXBuildFile; fileRef = A7216D1B18CB8E7900F09742 /* courseMap.js */; };
-		A7216D1E18CB8EAD00F09742 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = A7216D1D18CB8EAD00F09742 /* leaflet.css */; };
-		A7216D2018CB8EC500F09742 /* leaflet.js in Sources */ = {isa = PBXBuildFile; fileRef = A7216D1F18CB8EC500F09742 /* leaflet.js */; };
-		A7216D2218CB8ED300F09742 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A7216D2118CB8ED300F09742 /* style.css */; };
-		A7216D2418CB8EF500F09742 /* routeMap.geojson in Resources */ = {isa = PBXBuildFile; fileRef = A7216D2318CB8EF500F09742 /* routeMap.geojson */; };
 		CA0FE36E18BC3B0A00533D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36D18BC3B0A00533D88 /* Foundation.framework */; };
 		CA0FE37218BC3B0A00533D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE37118BC3B0A00533D88 /* UIKit.framework */; };
 		CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */; };
@@ -28,15 +22,12 @@
 		CA0FE39A18BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */; };
 		CA0FE39C18BC3B0A00533D88 /* seagullcentury_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */; };
 		CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */; };
-<<<<<<< HEAD
-=======
 		CAA27EED18CB8BBD00F8CC64 /* courseMap.html in Resources */ = {isa = PBXBuildFile; fileRef = CAA27EE718CB8BBD00F8CC64 /* courseMap.html */; };
 		CAA27EEE18CB8BBD00F8CC64 /* courseMap.js in Resources */ = {isa = PBXBuildFile; fileRef = CAA27EE818CB8BBD00F8CC64 /* courseMap.js */; };
 		CAA27EEF18CB8BBD00F8CC64 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = CAA27EE918CB8BBD00F8CC64 /* leaflet.js */; };
 		CAA27EF018CB8BBD00F8CC64 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = CAA27EEA18CB8BBD00F8CC64 /* leaflet.css */; };
 		CAA27EF118CB8BBD00F8CC64 /* route.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CAA27EEB18CB8BBD00F8CC64 /* route.geojson */; };
 		CAA27EF218CB8BBD00F8CC64 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CAA27EEC18CB8BBD00F8CC64 /* style.css */; };
->>>>>>> brandon
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
 		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
 		CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7918BFADB50089C0BB /* MapKit.framework */; };
@@ -56,12 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A7216D1918CB8E4600F09742 /* courseMap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = courseMap.html; sourceTree = "<group>"; };
-		A7216D1B18CB8E7900F09742 /* courseMap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = courseMap.js; sourceTree = "<group>"; };
-		A7216D1D18CB8EAD00F09742 /* leaflet.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = leaflet.css; sourceTree = "<group>"; };
-		A7216D1F18CB8EC500F09742 /* leaflet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = leaflet.js; sourceTree = "<group>"; };
-		A7216D2118CB8ED300F09742 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		A7216D2318CB8EF500F09742 /* routeMap.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routeMap.geojson; sourceTree = "<group>"; };
 		CA0FE36A18BC3B0A00533D88 /* seagullcentury-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seagullcentury-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0FE36D18BC3B0A00533D88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,15 +70,12 @@
 		CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = seagullcentury_iOSTests.m; path = "seagullcentury-iOSTests/seagullcentury_iOSTests.m"; sourceTree = SOURCE_ROOT; };
 		CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZRouteSelectionViewController.h; path = ../XYZRouteSelectionViewController.h; sourceTree = "<group>"; };
 		CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZRouteSelectionViewController.m; path = ../XYZRouteSelectionViewController.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		CAA27EE718CB8BBD00F8CC64 /* courseMap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = courseMap.html; sourceTree = "<group>"; };
 		CAA27EE818CB8BBD00F8CC64 /* courseMap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = courseMap.js; sourceTree = "<group>"; };
 		CAA27EE918CB8BBD00F8CC64 /* leaflet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = leaflet.js; sourceTree = "<group>"; };
 		CAA27EEA18CB8BBD00F8CC64 /* leaflet.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = leaflet.css; sourceTree = "<group>"; };
 		CAA27EEB18CB8BBD00F8CC64 /* route.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = route.geojson; sourceTree = "<group>"; };
 		CAA27EEC18CB8BBD00F8CC64 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
->>>>>>> brandon
 		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
@@ -130,19 +112,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7216D1818CB8DDC00F09742 /* Leaflet */ = {
-			isa = PBXGroup;
-			children = (
-				A7216D1918CB8E4600F09742 /* courseMap.html */,
-				A7216D1B18CB8E7900F09742 /* courseMap.js */,
-				A7216D1D18CB8EAD00F09742 /* leaflet.css */,
-				A7216D1F18CB8EC500F09742 /* leaflet.js */,
-				A7216D2118CB8ED300F09742 /* style.css */,
-				A7216D2318CB8EF500F09742 /* routeMap.geojson */,
-			);
-			name = Leaflet;
-			sourceTree = "<group>";
-		};
 		CA0FE36118BC3B0A00533D88 = {
 			isa = PBXGroup;
 			children = (
@@ -203,13 +172,7 @@
 		CA0FE37418BC3B0A00533D88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				A7216D1818CB8DDC00F09742 /* Leaflet */,
-				CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */,
-				CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */,
-=======
 				CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */,
->>>>>>> brandon
 				CA0FE37518BC3B0A00533D88 /* seagullcentury-iOS-Info.plist */,
 				CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */,
 				CA0FE37918BC3B0A00533D88 /* main.m */,
@@ -235,8 +198,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
 		CAA27EF318CB8BC200F8CC64 /* LeafLet Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,7 +211,6 @@
 			name = "LeafLet Files";
 			sourceTree = "<group>";
 		};
->>>>>>> brandon
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,13 +288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				A7216D1A18CB8E4600F09742 /* courseMap.html in Resources */,
-				A7216D2218CB8ED300F09742 /* style.css in Resources */,
-				CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */,
-				A7216D1E18CB8EAD00F09742 /* leaflet.css in Resources */,
-				A7216D2418CB8EF500F09742 /* routeMap.geojson in Resources */,
-=======
 				CAA27EEF18CB8BBD00F8CC64 /* leaflet.js in Resources */,
 				CAA27EEE18CB8BBD00F8CC64 /* courseMap.js in Resources */,
 				CAA27EED18CB8BBD00F8CC64 /* courseMap.html in Resources */,
@@ -342,7 +295,6 @@
 				CAA27EF218CB8BBD00F8CC64 /* style.css in Resources */,
 				CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */,
 				CAA27EF018CB8BBD00F8CC64 /* leaflet.css in Resources */,
->>>>>>> brandon
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
 			);
@@ -369,8 +321,6 @@
 				CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,
-				A7216D2018CB8EC500F09742 /* leaflet.js in Sources */,
-				A7216D1C18CB8E7900F09742 /* courseMap.js in Sources */,
 				CA0FE37A18BC3B0A00533D88 /* main.m in Sources */,
 				CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */,
 			);

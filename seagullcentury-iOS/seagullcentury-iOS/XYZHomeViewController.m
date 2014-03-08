@@ -34,13 +34,7 @@
     item2.urlName = @"http:/orgs.salisbury.edu/math";
     [self.homeListItems addObject:item2];
     
-<<<<<<< HEAD
-    [self updateGeoJSONFiles];
-    
-    /*
-=======
  /*
->>>>>>> brandon
     XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
     item3.itemName = @"Leaf Let Map";
     item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
@@ -51,64 +45,11 @@
     item4.itemName = @"100 Mile Route Map";
     item4.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
     [self.homeListItems addObject:item4];
-<<<<<<< HEAD
-    */
-
-=======
  */
->>>>>>> brandon
     
 }
 
 
-<<<<<<< HEAD
-
- 
- -(void) updateGeoJSONFiles{
- 
- //retrieves the route and restStop GeoJSON files from the server and stores them locally
- NSString *stringRoutePointURL = @"http://apps.esrgc.org/maps/foodshed/data/route.geojson.";
- //change when a restStop geoJSON is uploaded to Server
- NSString *stringRestPointURL = @"http://apps.esrgc.org/maps/foodshed/data/route.geojson.";
- 
- NSURL  *routeUrl = [NSURL URLWithString:stringRoutePointURL];
- NSURL  *restUrl = [NSURL URLWithString:stringRestPointURL];
- 
- NSData *urlRouteData = [NSData dataWithContentsOfURL:routeUrl];
- NSData *urlRestData = [NSData dataWithContentsOfURL:restUrl];
- 
- if ( urlRouteData )
- {
- NSArray       *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
- NSString  *documentsDirectory = [paths objectAtIndex:0];
- 
- NSString  *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"route.geojson"];
- [urlRouteData writeToFile:filePath atomically:YES];
- 
- NSLog(@"Item geojson path STRING %@", filePath);
- }
- 
- 
- if ( urlRestData )
- {
- NSArray       *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
- NSString  *documentsDirectory = [paths objectAtIndex:0];
- 
- NSString  *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"rest.geojson"];
- [urlRouteData writeToFile:filePath atomically:YES];
- 
- NSLog(@"Item geojson path STRING %@", filePath);
- }
- 
- }
- 
-
-
-
-
-
-=======
->>>>>>> brandon
 -(IBAction)unwindToListHomeController:(UIStoryboardSegue *)segue
 {
 
