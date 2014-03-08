@@ -81,8 +81,8 @@ static const CGFloat kAddressHeight = 24.0f;
     address.backgroundColor = [UIColor clearColor];
     address.font = [UIFont systemFontOfSize:16];
     address.textAlignment = NSTextAlignmentLeft;
-    [navBar addSubview:address];
-    self.addressField = address;
+    //[navBar addSubview:address];
+    //self.addressField = address;
     
     // After setting the urlFromtext call the load Request method
     [self loadRequestFromString:urlFromtext];
