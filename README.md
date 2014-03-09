@@ -10,3 +10,10 @@ seagullcentury-iOS
 
 	Apple uses the Mercator Map Projection
 
+- Issues
+	- I don't think that it is possible to do what we orginally thought about doing in the design pattern
+	iOS will not let you pass the file path as a string to the web browser.  Each are mutally exclusive.  
+	You can either pass the file path, to which you can not pass a query variable through.  And the URL path you can
+	pass with a query variable but you can not access the HTML file stored locally.  In fact you can not pass the file 
+	path as a string to the loadrequest function.
+

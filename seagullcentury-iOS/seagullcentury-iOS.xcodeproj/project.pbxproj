@@ -28,6 +28,7 @@
 		CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */; };
 		CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */; };
 		CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */; };
+		CAD3A05F18CCF88E0048B7CE /* leaftLet_File in Resources */ = {isa = PBXBuildFile; fileRef = CAD3A05E18CCF88E0048B7CE /* leaftLet_File */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZMenuItem.m; path = ../XYZMenuItem.m; sourceTree = "<group>"; };
 		CAB9DB2118BD165D00A1E8EE /* XYZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZWebViewController.h; path = ../XYZWebViewController.h; sourceTree = "<group>"; };
 		CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZWebViewController.m; path = ../XYZWebViewController.m; sourceTree = "<group>"; };
+		CAD3A05E18CCF88E0048B7CE /* leaftLet_File */ = {isa = PBXFileReference; lastKnownFileType = folder; path = leaftLet_File; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		CA0FE37418BC3B0A00533D88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CAD3A05E18CCF88E0048B7CE /* leaftLet_File */,
 				CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */,
 				CA0FE37518BC3B0A00533D88 /* seagullcentury-iOS-Info.plist */,
 				CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */,
+				CAD3A05F18CCF88E0048B7CE /* leaftLet_File in Resources */,
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
 			);

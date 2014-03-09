@@ -63,6 +63,10 @@ static const CGFloat kAddressHeight = 24.0f;
     //self.addressField = address;
     
     [webView loadRequest:urlFromtext];
+   //[self loadRequestFromString:urlFromtext];
+    
+    
+    
     
 }
 

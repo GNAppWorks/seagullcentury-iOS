@@ -18,10 +18,12 @@ typedef NS_ENUM(NSInteger, ROUTE){
     METRIC50
 };
 
+@property NSString *selectedRoute;
+
 @end
 
 @implementation XYZRouteSelectionViewController
-@synthesize urlRoute;
+@synthesize urlRoute, selectedRoute;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -61,12 +63,14 @@ typedef NS_ENUM(NSInteger, ROUTE){
     {
         XYZLeafletMapViewController *vc = [[segue.destinationViewController viewControllers] objectAtIndex:0];
         
+        
+        // local Path Method
         NSString *path = [[NSBundle mainBundle] pathForResource:@"courseMap" ofType:@"html" inDirectory:@"leaftLet_File"];
         NSURL *url = [NSURL fileURLWithPath:path];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        
         vc.urlFromtext = request;
-        NSLog(@"Item %@",vc.urlFromtext);
+        
+        // URL Method
         
         
     }
@@ -79,11 +83,11 @@ typedef NS_ENUM(NSInteger, ROUTE){
 {
     switch (self.routeSelector.selectedSegmentIndex) {
         case MILE100:
-           
+            //selectedRoute = @"http://www.salisbury.edu";
             //NSLog(@"100 Mile Route Selected");
             break;
         case MILE50:
-            
+            //selectedRoute = @"http://www.salisbury.edu/search.html?cx=012922190682254864109%3Ax5_7wzea6la&cof=FORID%3A11&q=park&sa=Search";
             //NSLog(@"50 Mile Route Selected");
             break;
         case METRIC100:
