@@ -19,13 +19,13 @@
     //retrieves the route and restStop GeoJSON files from the server and stores them locally
     NSString *stringRoutePointURL = @"http://apps.esrgc.org/maps/foodshed/data/route.geojson.";
     //change when a restStop geoJSON is uploaded to Server
-   // NSString *stringRestPointURL = @"http://apps.esrgc.org/maps/foodshed/data/route.geojson.";
+   // ********************* NSString *stringRestPointURL = @"http://apps.esrgc.org/maps/foodshed/data/route.geojson.";
     
     NSURL *routeUrl = [NSURL URLWithString:stringRoutePointURL];
-    //NSURL *restUrl = [NSURL URLWithString:stringRestPointURL];
+    // *************   NSURL *restUrl = [NSURL URLWithString:stringRestPointURL];
     
     NSData *urlRouteData = [NSData dataWithContentsOfURL:routeUrl];
-    //NSData *urlRestData = [NSData dataWithContentsOfURL:restUrl];
+    // ************* NSData *urlRestData = [NSData dataWithContentsOfURL:restUrl];
     
     //attempt to download live data
     if (urlRouteData)
@@ -36,31 +36,36 @@
         [urlRouteData writeToFile:filePath atomically:YES];
         NSLog(@"I loaded the Route GEOJSON in location %@", filePath);
     }
-    /* blocking off the rest geojson data
+    /*******************************
+     
+     blocking off the rest geojson data
     else if (urlRestData)
     {
         //file to write to
         NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"rest.geojson"];
         // write file to device
         [urlRouteData writeToFile:filePath atomically:YES];
-    }*/
+    }
+     *****************************/
     //copy data from initial package into the applications Documents folder
     else
     {
         //file to write to
         NSString *routeFilePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"route.geojson"];
-        //NSString *restFilePath = [NSString stringWithFormat:@"%/%@", documentsDirectory,@"rest.geojson"];
+        // ********************* NSString *restFilePath = [NSString stringWithFormat:@"%/%@", documentsDirectory,@"rest.geojson"];
         
         //file to copy from
         NSString *routeJson = [[NSBundle mainBundle] pathForResource:@"route" ofType:@"geojson" inDirectory:@"leaftlet_File" ];
         NSData *routeJsonData = [NSData dataWithContentsOfFile:routeJson options:kNilOptions error:nil];
         
-        /*NSString *restJson = [[NSBundle mainBundle] pathForResource:@"rest"  ofType:@"geojson" inDirectory:@"leaftLet_File"];
+        /*******************
+        NSString *restJson = [[NSBundle mainBundle] pathForResource:@"rest"  ofType:@"geojson" inDirectory:@"leaftLet_File"];
         NSData *restJsonData = [NSData dataWithContentsOfFile:restJson options:kNilOptions error:nil];
-        */
+        ********************/
+        
         //write file to device
         [routeJsonData writeToFile:routeFilePath atomically:YES];
-        //[restJsonData writeToFile:restFilePath atomically:YES];
+        // ******* [restJsonData writeToFile:restFilePath atomically:YES];
         
         NSLog(@"I loaded the STATIC Route GEOJSON in location %@", routeFilePath);
     }
