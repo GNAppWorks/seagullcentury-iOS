@@ -7,6 +7,8 @@ var map = new L.Map(
 	}
 );
 
+alert(document.cookie);
+
 //load base layer
 var url = 'http://a.tile.openstreetmap.org/{z}/{x}/{y}.png';
 L.tileLayer(url, {maxZoom: 18}).addTo(map);
