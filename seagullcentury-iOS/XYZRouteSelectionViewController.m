@@ -70,8 +70,20 @@ typedef NS_ENUM(NSInteger, ROUTE){
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         vc.urlFromtext = request;
         
-        // URL Method
+        // URL Srting Method
+        /*
+         Change the urlFromtext to a string and then pass the string based on the selection of the picker
+         
+        NSURL *url2 = [NSURL ];
         
+        NSLog(@"This is the file path as a string %@", [path class]);
+        
+        NSURLRequest *request2 = [NSURLRequest requestWithURL:url2];
+        
+        NSLog(@"This is the request object %@", request2);
+        
+        vc.urlFromtext = request2;
+         */
         
     }
     
