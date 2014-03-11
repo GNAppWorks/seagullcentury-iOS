@@ -70,7 +70,7 @@ typedef NS_ENUM(NSInteger, ROUTE){
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         vc.urlFromtext = request;
         
-        // URL Method
+        // URL String Method
         
         
     }

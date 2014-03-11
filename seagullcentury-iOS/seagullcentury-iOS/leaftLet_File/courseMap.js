@@ -27,4 +27,4 @@ map.locate({
 var marker = L.marker([38.3456, -75.60580]).addTo(map);
 
 L.geoJson(route).addTo(map);
-L.geoJson(route2).addTo(map);
+//L.geoJson(route2).addTo(map);
