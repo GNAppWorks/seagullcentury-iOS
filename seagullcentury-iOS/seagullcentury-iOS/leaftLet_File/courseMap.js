@@ -11,7 +11,6 @@ var map = new L.Map(
 var url = 'http://a.tile.openstreetmap.org/{z}/{x}/{y}.png';
 L.tileLayer(url, {maxZoom: 18}).addTo(map);
 
-
 //add code for route
 	// read in the route from server
 	// put GeoJSON objects in ArrayList
@@ -27,4 +26,3 @@ map.locate({
 var marker = L.marker([38.3456, -75.60580]).addTo(map);
 
 L.geoJson(route).addTo(map);
-L.geoJson(route2).addTo(map);

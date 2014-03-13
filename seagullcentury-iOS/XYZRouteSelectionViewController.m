@@ -18,7 +18,8 @@ typedef NS_ENUM(NSInteger, ROUTE){
     METRIC50
 };
 
-@property NSString *selectedRoute;
+
+
 
 @end
 
@@ -59,32 +60,30 @@ typedef NS_ENUM(NSInteger, ROUTE){
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
+    XYZLeafletMapViewController *vc = [[segue.destinationViewController viewControllers] objectAtIndex:0];
+    
     if ([segue.identifier isEqualToString:@"toRouteView"])
     {
-        XYZLeafletMapViewController *vc = [[segue.destinationViewController viewControllers] objectAtIndex:0];
-        
-        
         // local Path Method
         NSString *path = [[NSBundle mainBundle] pathForResource:@"courseMap" ofType:@"html" inDirectory:@"leaftLet_File"];
         NSURL *url = [NSURL fileURLWithPath:path];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         vc.urlFromtext = request;
         
-        // URL Srting Method
-        /*
-         Change the urlFromtext to a string and then pass the string based on the selection of the picker
-         
-        NSURL *url2 = [NSURL ];
+        // String Method
         
-        NSLog(@"This is the file path as a string %@", [path class]);
+        // Change the format of urlFromtext to NSString and set vc.urlFromtext = urlStringRequest
+        // Change the XYZleaflet file to loadrequest from string function
         
-        NSURLRequest *request2 = [NSURLRequest requestWithURL:url2];
+        //vc.urlFromtext = selectedRoute;
         
-        NSLog(@"This is the request object %@", request2);
-        
-        vc.urlFromtext = request2;
-         */
-        
+    }
+    if ([segue.identifier isEqualToString:@"toSUMap"])
+    {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"SUCampusMap" ofType:@"jpg" inDirectory:@"leaftLet_File"];
+        NSURL *url = [NSURL fileURLWithPath:path];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        vc.urlFromtext = request;
     }
     
     

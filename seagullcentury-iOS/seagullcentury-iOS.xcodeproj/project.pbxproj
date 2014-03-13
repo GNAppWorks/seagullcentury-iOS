@@ -15,20 +15,20 @@
 		CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE37F18BC3B0A00533D88 /* Main.storyboard */; };
 		CA0FE38418BC3B0A00533D88 /* XYZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE38318BC3B0A00533D88 /* XYZHomeViewController.m */; };
 		CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE38618BC3B0A00533D88 /* XYZLeafletMapViewController.m */; };
-		CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE38818BC3B0A00533D88 /* Images.xcassets */; };
 		CA0FE39018BC3B0A00533D88 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE38F18BC3B0A00533D88 /* XCTest.framework */; };
 		CA0FE39118BC3B0A00533D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36D18BC3B0A00533D88 /* Foundation.framework */; };
 		CA0FE39218BC3B0A00533D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE37118BC3B0A00533D88 /* UIKit.framework */; };
 		CA0FE39A18BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */; };
 		CA0FE39C18BC3B0A00533D88 /* seagullcentury_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */; };
+		CA3026D418CF9B00007B6F08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3026D318CF9B00007B6F08 /* Images.xcassets */; };
 		CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */; };
+		CA79B61918CF867D00C2B9F5 /* leaftLet_File in Resources */ = {isa = PBXBuildFile; fileRef = CA79B61818CF867D00C2B9F5 /* leaftLet_File */; };
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
 		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
 		CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7918BFADB50089C0BB /* MapKit.framework */; };
 		CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */; };
 		CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */; };
 		CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */; };
-		CAD3A05F18CCF88E0048B7CE /* leaftLet_File in Resources */ = {isa = PBXBuildFile; fileRef = CAD3A05E18CCF88E0048B7CE /* leaftLet_File */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +57,15 @@
 		CA0FE38318BC3B0A00533D88 /* XYZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZHomeViewController.m; sourceTree = "<group>"; };
 		CA0FE38518BC3B0A00533D88 /* XYZLeafletMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZLeafletMapViewController.h; sourceTree = "<group>"; };
 		CA0FE38618BC3B0A00533D88 /* XYZLeafletMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZLeafletMapViewController.m; sourceTree = "<group>"; };
-		CA0FE38818BC3B0A00533D88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA0FE38E18BC3B0A00533D88 /* seagullcentury-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "seagullcentury-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0FE38F18BC3B0A00533D88 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CA0FE39718BC3B0A00533D88 /* seagullcentury-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "seagullcentury-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		CA0FE39918BC3B0A00533D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = seagullcentury_iOSTests.m; path = "seagullcentury-iOSTests/seagullcentury_iOSTests.m"; sourceTree = SOURCE_ROOT; };
+		CA3026D318CF9B00007B6F08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZRouteSelectionViewController.h; path = ../XYZRouteSelectionViewController.h; sourceTree = "<group>"; };
 		CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZRouteSelectionViewController.m; path = ../XYZRouteSelectionViewController.m; sourceTree = "<group>"; };
+		CA79B61818CF867D00C2B9F5 /* leaftLet_File */ = {isa = PBXFileReference; lastKnownFileType = folder; path = leaftLet_File; sourceTree = "<group>"; };
 		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZMenuItem.m; path = ../XYZMenuItem.m; sourceTree = "<group>"; };
 		CAB9DB2118BD165D00A1E8EE /* XYZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZWebViewController.h; path = ../XYZWebViewController.h; sourceTree = "<group>"; };
 		CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZWebViewController.m; path = ../XYZWebViewController.m; sourceTree = "<group>"; };
-		CAD3A05E18CCF88E0048B7CE /* leaftLet_File */ = {isa = PBXFileReference; lastKnownFileType = folder; path = leaftLet_File; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +137,8 @@
 		CA0FE37318BC3B0A00533D88 /* seagullcentury-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CA0FE38818BC3B0A00533D88 /* Images.xcassets */,
 				CA0FE37F18BC3B0A00533D88 /* Main.storyboard */,
+				CA3026D318CF9B00007B6F08 /* Images.xcassets */,
 				CA0FE37418BC3B0A00533D88 /* Supporting Files */,
 				CA0FE37C18BC3B0A00533D88 /* XYZAppDelegate.h */,
 				CA0FE37D18BC3B0A00533D88 /* XYZAppDelegate.m */,
@@ -161,7 +161,7 @@
 		CA0FE37418BC3B0A00533D88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CAD3A05E18CCF88E0048B7CE /* leaftLet_File */,
+				CA79B61818CF867D00C2B9F5 /* leaftLet_File */,
 				CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */,
 				CA0FE37518BC3B0A00533D88 /* seagullcentury-iOS-Info.plist */,
 				CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */,
@@ -233,7 +233,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = XYZ;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Salisbury University";
 				TargetAttributes = {
 					CA0FE38D18BC3B0A00533D88 = {
@@ -265,8 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0FE38918BC3B0A00533D88 /* Images.xcassets in Resources */,
-				CAD3A05F18CCF88E0048B7CE /* leaftLet_File in Resources */,
+				CA79B61918CF867D00C2B9F5 /* leaftLet_File in Resources */,
+				CA3026D418CF9B00007B6F08 /* Images.xcassets in Resources */,
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
 			);
@@ -348,7 +348,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -387,7 +386,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -445,7 +443,6 @@
 		CA0FE3A318BC3B0A00533D88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/seagullcentury-iOS.app/seagullcentury-iOS";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -468,7 +465,6 @@
 		CA0FE3A418BC3B0A00533D88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/seagullcentury-iOS.app/seagullcentury-iOS";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

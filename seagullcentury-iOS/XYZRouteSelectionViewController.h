@@ -11,8 +11,10 @@
 @interface XYZRouteSelectionViewController : UIViewController
 
 @property (nonatomic, strong) NSURLRequest* urlRoute;
+@property (nonatomic, strong) NSString *selectedRoute;
 
 @property (strong, nonatomic) IBOutlet UISegmentedControl *routeSelector;
+
 
 
 
