@@ -74,7 +74,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    [self updateGeoJSONFiles];
+    //[self updateGeoJSONFiles];
     // Override point for customization after application launch.
     return YES;
 }

@@ -62,8 +62,8 @@ static const CGFloat kAddressHeight = 24.0f;
     //[navBar addSubview:address];
     //self.addressField = address;
     
-    [webView loadRequest:urlFromtext];
-    //[self loadRequestFromString:urlFromtext];
+    //[webView loadRequest:urlFromtext];
+    [self loadRequestFromString:urlFromtext];
     
     
     

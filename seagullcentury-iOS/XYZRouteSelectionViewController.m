@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, ROUTE){
 @end
 
 @implementation XYZRouteSelectionViewController
-@synthesize urlRoute, selectedRoute;
+@synthesize urlRoute;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +39,7 @@ typedef NS_ENUM(NSInteger, ROUTE){
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=0";
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,27 +65,27 @@ typedef NS_ENUM(NSInteger, ROUTE){
     
     if ([segue.identifier isEqualToString:@"toRouteView"])
     {
+        /*
         // local Path Method
         NSString *path = [[NSBundle mainBundle] pathForResource:@"courseMap" ofType:@"html" inDirectory:@"leaftLet_File"];
         NSURL *url = [NSURL fileURLWithPath:path];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         vc.urlFromtext = request;
+         */
         
         // String Method
         
         // Change the format of urlFromtext to NSString and set vc.urlFromtext = urlStringRequest
         // Change the XYZleaflet file to loadrequest from string function
         
-        //vc.urlFromtext = selectedRoute;
+        vc.urlFromtext = urlRoute;
         
     }
     if ([segue.identifier isEqualToString:@"toSUMap"])
     {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"SUCampusMap" ofType:@"jpg" inDirectory:@"leaftLet_File"];
-        NSURL *url = [NSURL fileURLWithPath:path];
-        NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        vc.urlFromtext = request;
+        
     }
+    
     
     
 }
@@ -94,15 +95,15 @@ typedef NS_ENUM(NSInteger, ROUTE){
 {
     switch (self.routeSelector.selectedSegmentIndex) {
         case MILE100:
-            //selectedRoute = @"http://www.salisbury.edu";
+            urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=0";
             //NSLog(@"100 Mile Route Selected");
             break;
         case MILE50:
-            //selectedRoute = @"http://www.salisbury.edu/search.html?cx=012922190682254864109%3Ax5_7wzea6la&cof=FORID%3A11&q=park&sa=Search";
+            urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=1";
             //NSLog(@"50 Mile Route Selected");
             break;
         case METRIC100:
-           
+           urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=2";
             //NSLog(@"100 KM Route Selected");
             break;
         case METRIC50:
