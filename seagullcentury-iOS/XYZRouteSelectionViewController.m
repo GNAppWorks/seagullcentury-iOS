@@ -93,6 +93,8 @@ typedef NS_ENUM(NSInteger, ROUTE){
 
 - (IBAction)routePickerControl:(id)sender
 {
+    // Using local files to run simulator on
+    // Need to change on release!
     switch (self.routeSelector.selectedSegmentIndex) {
         case MILE100:
             urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=0";
