@@ -16,10 +16,10 @@ static const CGFloat kSpacer = 2.0f;
 static const CGFloat kAddressHeight = 24.0f;
 
 @interface XYZLeafletMapViewController () <UIWebViewDelegate>
-@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
-@property (strong,nonatomic) UILabel *pageTitle;
-@property (strong, nonatomic) UILabel *addressField;
+@property (weak,nonatomic) UILabel *pageTitle;
+@property (weak, nonatomic) UILabel *addressField;
 
 - (void)loadRequestFromString:(NSString*)urlString;
 - (void)loadRequestFromAddressField:(id)addressField;

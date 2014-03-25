@@ -27,8 +27,8 @@ static const CGFloat kAddressHeight = 24.0f;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *refresh;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *forward;
 
-@property (strong,nonatomic) UILabel *pageTitle;
-@property (strong, nonatomic) UILabel *addressField;
+@property (weak,nonatomic) UILabel *pageTitle;
+@property (weak, nonatomic) UILabel *addressField;
 
 - (void)loadRequestFromString:(NSString*)urlString;
 - (void)loadRequestFromAddressField:(id)addressField;

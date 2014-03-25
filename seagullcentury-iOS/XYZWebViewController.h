@@ -10,6 +10,6 @@
 
 @interface XYZWebViewController : UIViewController
 
-@property (nonatomic, strong) NSString* urlFromtext;
+@property (nonatomic, weak) NSString* urlFromtext;
 
 @end
