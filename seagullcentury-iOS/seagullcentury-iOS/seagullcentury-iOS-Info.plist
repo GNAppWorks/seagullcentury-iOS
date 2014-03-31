@@ -25,7 +25,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>New_Design</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string></string>

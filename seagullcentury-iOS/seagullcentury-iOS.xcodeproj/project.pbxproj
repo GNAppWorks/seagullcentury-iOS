@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0311D260325F42EC9E752F59 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BAB2C51CB54909997BAB45 /* libPods.a */; };
 		CA0FE36E18BC3B0A00533D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36D18BC3B0A00533D88 /* Foundation.framework */; };
 		CA0FE37218BC3B0A00533D88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE37118BC3B0A00533D88 /* UIKit.framework */; };
 		CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE37618BC3B0A00533D88 /* InfoPlist.strings */; };
@@ -23,6 +24,8 @@
 		CA1EE14618D24CA400A23A88 /* SUStart.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CA1EE14518D24CA400A23A88 /* SUStart.gpx */; };
 		CA3026D418CF9B00007B6F08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3026D318CF9B00007B6F08 /* Images.xcassets */; };
 		CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */; };
+		CA4C391918EA0C900006BEAE /* XYZSlideTableMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4C391818EA0C900006BEAE /* XYZSlideTableMenuController.m */; };
+		CA646FCF18E9E0F3000D2702 /* New_Design.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */; };
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
 		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
 		CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7918BFADB50089C0BB /* MapKit.framework */; };
@@ -42,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B4ADACAA76A419982E26087 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		84BAB2C51CB54909997BAB45 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0FE36A18BC3B0A00533D88 /* seagullcentury-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seagullcentury-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0FE36D18BC3B0A00533D88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +71,9 @@
 		CA3026D318CF9B00007B6F08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZRouteSelectionViewController.h; path = ../XYZRouteSelectionViewController.h; sourceTree = "<group>"; };
 		CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZRouteSelectionViewController.m; path = ../XYZRouteSelectionViewController.m; sourceTree = "<group>"; };
+		CA4C391718EA0C900006BEAE /* XYZSlideTableMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSlideTableMenuController.h; sourceTree = "<group>"; };
+		CA4C391818EA0C900006BEAE /* XYZSlideTableMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZSlideTableMenuController.m; sourceTree = "<group>"; };
+		CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = New_Design.storyboard; sourceTree = "<group>"; };
 		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
@@ -86,6 +94,7 @@
 				CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */,
 				CA0FE37218BC3B0A00533D88 /* UIKit.framework in Frameworks */,
 				CA0FE36E18BC3B0A00533D88 /* Foundation.framework in Frameworks */,
+				0311D260325F42EC9E752F59 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +118,7 @@
 				CA0FE36B18BC3B0A00533D88 /* Products */,
 				CA0FE37318BC3B0A00533D88 /* seagullcentury-iOS */,
 				CA0FE39518BC3B0A00533D88 /* seagullcentury-iOSTests */,
+				4B4ADACAA76A419982E26087 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +140,7 @@
 				CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */,
 				CA0FE37118BC3B0A00533D88 /* UIKit.framework */,
 				CA0FE38F18BC3B0A00533D88 /* XCTest.framework */,
+				84BAB2C51CB54909997BAB45 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CA0FE37F18BC3B0A00533D88 /* Main.storyboard */,
+				CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */,
 				CA3026D318CF9B00007B6F08 /* Images.xcassets */,
 				CA0FE37418BC3B0A00533D88 /* Supporting Files */,
 				CA0FE37C18BC3B0A00533D88 /* XYZAppDelegate.h */,
@@ -150,6 +162,8 @@
 				CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */,
 				CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */,
 				CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */,
+				CA4C391718EA0C900006BEAE /* XYZSlideTableMenuController.h */,
+				CA4C391818EA0C900006BEAE /* XYZSlideTableMenuController.m */,
 				CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */,
 				CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */,
 				CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */,
@@ -195,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA0FE39F18BC3B0A00533D88 /* Build configuration list for PBXNativeTarget "seagullcentury-iOS" */;
 			buildPhases = (
+				7DA1F9DCCA394BE0B2605347 /* Check Pods Manifest.lock */,
 				CA0FE36618BC3B0A00533D88 /* Sources */,
 				CA0FE36718BC3B0A00533D88 /* Frameworks */,
 				CA0FE36818BC3B0A00533D88 /* Resources */,
+				65CC56E28F314B279AE53360 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +285,7 @@
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
 				CA1EE14618D24CA400A23A88 /* SUStart.gpx in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
+				CA646FCF18E9E0F3000D2702 /* New_Design.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +299,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65CC56E28F314B279AE53360 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA1F9DCCA394BE0B2605347 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA0FE36618BC3B0A00533D88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -293,6 +343,7 @@
 				CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,
+				CA4C391918EA0C900006BEAE /* XYZSlideTableMenuController.m in Sources */,
 				CA0FE37A18BC3B0A00533D88 /* main.m in Sources */,
 				CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */,
 			);
@@ -416,6 +467,7 @@
 		};
 		CA0FE3A018BC3B0A00533D88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B4ADACAA76A419982E26087 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -429,6 +481,7 @@
 		};
 		CA0FE3A118BC3B0A00533D88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B4ADACAA76A419982E26087 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
