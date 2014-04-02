@@ -22,9 +22,9 @@
 		CA0FE39A18BC3B0A00533D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */; };
 		CA0FE39C18BC3B0A00533D88 /* seagullcentury_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */; };
 		CA1EE14618D24CA400A23A88 /* SUStart.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CA1EE14518D24CA400A23A88 /* SUStart.gpx */; };
-		CA3026D418CF9B00007B6F08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3026D318CF9B00007B6F08 /* Images.xcassets */; };
 		CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */; };
 		CA4C391918EA0C900006BEAE /* XYZSlideTableMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4C391818EA0C900006BEAE /* XYZSlideTableMenuController.m */; };
+		CA58012718EB2DFE00274DE9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA58012618EB2DFE00274DE9 /* HomeViewController.m */; };
 		CA646FCF18E9E0F3000D2702 /* New_Design.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */; };
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
 		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
@@ -32,6 +32,7 @@
 		CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */; };
 		CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */; };
 		CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */; };
+		CADD6A4F18EB8102001B3378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADD6A4E18EB8102001B3378 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +69,12 @@
 		CA0FE39918BC3B0A00533D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA0FE39B18BC3B0A00533D88 /* seagullcentury_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = seagullcentury_iOSTests.m; path = "seagullcentury-iOSTests/seagullcentury_iOSTests.m"; sourceTree = SOURCE_ROOT; };
 		CA1EE14518D24CA400A23A88 /* SUStart.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SUStart.gpx; sourceTree = "<group>"; };
-		CA3026D318CF9B00007B6F08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZRouteSelectionViewController.h; path = ../XYZRouteSelectionViewController.h; sourceTree = "<group>"; };
 		CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZRouteSelectionViewController.m; path = ../XYZRouteSelectionViewController.m; sourceTree = "<group>"; };
 		CA4C391718EA0C900006BEAE /* XYZSlideTableMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSlideTableMenuController.h; sourceTree = "<group>"; };
 		CA4C391818EA0C900006BEAE /* XYZSlideTableMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZSlideTableMenuController.m; sourceTree = "<group>"; };
+		CA58012518EB2DFE00274DE9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CA58012618EB2DFE00274DE9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = New_Design.storyboard; sourceTree = "<group>"; };
 		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -82,6 +84,7 @@
 		CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZMenuItem.m; path = ../XYZMenuItem.m; sourceTree = "<group>"; };
 		CAB9DB2118BD165D00A1E8EE /* XYZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZWebViewController.h; path = ../XYZWebViewController.h; sourceTree = "<group>"; };
 		CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZWebViewController.m; path = ../XYZWebViewController.m; sourceTree = "<group>"; };
+		CADD6A4E18EB8102001B3378 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +151,9 @@
 		CA0FE37318BC3B0A00533D88 /* seagullcentury-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CA58012418EB2D7B00274DE9 /* Design 2.0 */,
 				CA0FE37F18BC3B0A00533D88 /* Main.storyboard */,
-				CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */,
-				CA3026D318CF9B00007B6F08 /* Images.xcassets */,
+				CADD6A4E18EB8102001B3378 /* Images.xcassets */,
 				CA0FE37418BC3B0A00533D88 /* Supporting Files */,
 				CA0FE37C18BC3B0A00533D88 /* XYZAppDelegate.h */,
 				CA0FE37D18BC3B0A00533D88 /* XYZAppDelegate.m */,
@@ -162,8 +165,6 @@
 				CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */,
 				CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */,
 				CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */,
-				CA4C391718EA0C900006BEAE /* XYZSlideTableMenuController.h */,
-				CA4C391818EA0C900006BEAE /* XYZSlideTableMenuController.m */,
 				CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */,
 				CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */,
 				CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */,
@@ -200,6 +201,18 @@
 				CA0FE39818BC3B0A00533D88 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA58012418EB2D7B00274DE9 /* Design 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */,
+				CA4C391718EA0C900006BEAE /* XYZSlideTableMenuController.h */,
+				CA4C391818EA0C900006BEAE /* XYZSlideTableMenuController.m */,
+				CA58012518EB2DFE00274DE9 /* HomeViewController.h */,
+				CA58012618EB2DFE00274DE9 /* HomeViewController.m */,
+			);
+			name = "Design 2.0";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3026D418CF9B00007B6F08 /* Images.xcassets in Resources */,
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
+				CADD6A4F18EB8102001B3378 /* Images.xcassets in Resources */,
 				CA1EE14618D24CA400A23A88 /* SUStart.gpx in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
 				CA646FCF18E9E0F3000D2702 /* New_Design.storyboard in Resources */,
@@ -340,6 +353,7 @@
 				CA0FE38418BC3B0A00533D88 /* XYZHomeViewController.m in Sources */,
 				CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */,
 				CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */,
+				CA58012718EB2DFE00274DE9 /* HomeViewController.m in Sources */,
 				CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,

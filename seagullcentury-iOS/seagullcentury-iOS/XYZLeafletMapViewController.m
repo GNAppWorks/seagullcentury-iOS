@@ -9,9 +9,9 @@
 #import "XYZLeafletMapViewController.h"
 
 //static const CGFloat kNavBarHeight = 52.0f;
-static const CGFloat kLabelHeight = 14.0f;
+static const CGFloat kLabelHeight = 20.0f;
 static const CGFloat kMargin = 10.0f;
-static const CGFloat kSpacer = 2.0f;
+static const CGFloat kSpacer = 9.0f;
 //static const CGFloat kLabelFontSize = 12.0f;
 static const CGFloat kAddressHeight = 24.0f;
 
@@ -42,12 +42,17 @@ static const CGFloat kAddressHeight = 24.0f;
     self.webView.delegate = self;
     
     /* Create the page title label */
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:143/255.0f green:17/255.0f blue:17/255.0f alpha:1]];
+    [self.navigationController.navigationBar setTintColor:[UIColor yellowColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
     UINavigationBar *navBar = self.navigationController.navigationBar;
     CGRect labelFrame = CGRectMake(kMargin, kSpacer, navBar.bounds.size.width - 2 * kMargin, kLabelHeight);
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     label.backgroundColor = [UIColor clearColor];
-    label.font = [UIFont systemFontOfSize:13];
+    label.font = [UIFont systemFontOfSize:16];
+    label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;
     [navBar addSubview:label];
     self.pageTitle = label;
@@ -64,9 +69,6 @@ static const CGFloat kAddressHeight = 24.0f;
     
     //[webView loadRequest:urlFromtext];
     [self loadRequestFromString:urlFromtext];
-    
-    
-    
     
 }
 
