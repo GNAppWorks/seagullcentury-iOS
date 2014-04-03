@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface XYZSlideTableMenuController : UITableViewController
+@interface MainSideMenuController : UITableViewController
 
 
 - (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue;

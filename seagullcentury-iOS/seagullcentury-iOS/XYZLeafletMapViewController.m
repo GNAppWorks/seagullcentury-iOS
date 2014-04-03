@@ -157,14 +157,20 @@ static const CGFloat kAddressHeight = 24.0f;
 
 - (IBAction)menuButtonTapped:(id)sender {
     
-    //Chek the current position
-    if([self.slidingViewController currentTopViewPosition]==1){
+    //Check the current position
+    if([self.slidingViewController currentTopViewPosition]==2){
         //show menu
-        [self.slidingViewController anchorTopViewToRightAnimated:YES];
+        [self.slidingViewController anchorTopViewToLeftAnimated:YES];
     }else{
         //Dismiss menu
         [self.slidingViewController resetTopViewAnimated:YES];
     }
+    
+}
+
+
+- (IBAction)unwindToMapMenuViewController:(UIStoryboardSegue *)segue
+{
     
 }
 

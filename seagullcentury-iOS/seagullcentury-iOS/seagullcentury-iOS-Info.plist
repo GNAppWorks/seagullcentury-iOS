@@ -27,9 +27,7 @@
 	<key>UIMainStoryboardFile</key>
 	<string>New_Design</string>
 	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string></string>
-	</array>
+	<array/>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
 		<key>UINavigationBar</key>
