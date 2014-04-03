@@ -10,9 +10,6 @@
 
 
 @interface XYZSlideTableMenuController : UITableViewController
-
-
 - (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue;
-
 @end
 

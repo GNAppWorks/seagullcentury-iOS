@@ -71,8 +71,6 @@
 - (IBAction)unwindToMainMenu:(UIStoryboardSegue *)segue
 {
     [self viewDidLoad];
-    [self.routePicker setSelectedSegmentIndex:UISegmentedControlNoSegment];
-    
 }
 
 - (IBAction)goToMap:(UISegmentedControl *)sender

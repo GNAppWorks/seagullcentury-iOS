@@ -154,7 +154,4 @@ static const CGFloat kAddressHeight = 24.0f;
     return YES;
 }
 
-
-
-
 @end
