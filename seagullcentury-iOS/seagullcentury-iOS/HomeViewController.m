@@ -60,19 +60,22 @@
     
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    XYZLeafletMapViewController *vc = [[segue.destinationViewController viewControllers] objectAtIndex:0];
+    
     
     if ([segue.identifier isEqualToString:@"toRouteView"])
     {
+        XYZLeafletMapViewController *vc = [[segue.destinationViewController viewControllers] objectAtIndex:0];
         vc.urlFromtext = urlRoute;
     }
+    
+    
      
 
 }
 
 - (IBAction)unwindToMainMenu:(UIStoryboardSegue *)segue
 {
-    [self viewDidLoad];
+    //[self viewDidLoad];
     [self.routePicker setSelectedSegmentIndex:UISegmentedControlNoSegment];
     
 }
@@ -102,12 +105,20 @@
 }
 - (IBAction)menuButtonTapped:(id)sender {
     
+    /*
     //Check the current position
     if([self.slidingViewController currentTopViewPosition]==2){
         //show menu
         [self.slidingViewController anchorTopViewToRightAnimated:YES];
     }else{
         //Dismiss menu
+        [self.slidingViewController resetTopViewAnimated:YES];
+    }
+     */
+    
+    if (self.slidingViewController.currentTopViewPosition == ECSlidingViewControllerTopViewPositionCentered) {
+        [self.slidingViewController anchorTopViewToRightAnimated:YES];
+    } else {
         [self.slidingViewController resetTopViewAnimated:YES];
     }
     

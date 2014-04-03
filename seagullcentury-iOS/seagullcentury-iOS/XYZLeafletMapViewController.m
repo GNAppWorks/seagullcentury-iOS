@@ -157,12 +157,9 @@ static const CGFloat kAddressHeight = 24.0f;
 
 - (IBAction)menuButtonTapped:(id)sender {
     
-    //Check the current position
-    if([self.slidingViewController currentTopViewPosition]==2){
-        //show menu
+    if (self.slidingViewController.currentTopViewPosition == ECSlidingViewControllerTopViewPositionCentered) {
         [self.slidingViewController anchorTopViewToLeftAnimated:YES];
-    }else{
-        //Dismiss menu
+    } else {
         [self.slidingViewController resetTopViewAnimated:YES];
     }
     

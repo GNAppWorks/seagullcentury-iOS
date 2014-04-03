@@ -27,6 +27,7 @@
 		CA58012718EB2DFE00274DE9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA58012618EB2DFE00274DE9 /* HomeViewController.m */; };
 		CA646FCF18E9E0F3000D2702 /* New_Design.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */; };
 		CAA0097718EDDE26007D00F8 /* WebSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0097618EDDE26007D00F8 /* WebSideMenuController.m */; };
+		CAA0097A18EDF5EB007D00F8 /* SWRevealViewController in Resources */ = {isa = PBXBuildFile; fileRef = CAA0097918EDF5EB007D00F8 /* SWRevealViewController */; };
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
 		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
 		CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7918BFADB50089C0BB /* MapKit.framework */; };
@@ -79,6 +80,7 @@
 		CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = New_Design.storyboard; sourceTree = "<group>"; };
 		CAA0097518EDDE26007D00F8 /* WebSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSideMenuController.h; sourceTree = "<group>"; };
 		CAA0097618EDDE26007D00F8 /* WebSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSideMenuController.m; sourceTree = "<group>"; };
+		CAA0097918EDF5EB007D00F8 /* SWRevealViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SWRevealViewController; sourceTree = "<group>"; };
 		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		CA58012418EB2D7B00274DE9 /* Design 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				CAA0097918EDF5EB007D00F8 /* SWRevealViewController */,
 				CA646FCE18E9E0F3000D2702 /* New_Design.storyboard */,
 				CA4C391718EA0C900006BEAE /* MainSideMenuController.h */,
 				CA4C391818EA0C900006BEAE /* MainSideMenuController.m */,
@@ -304,6 +307,7 @@
 			files = (
 				CA0FE37818BC3B0A00533D88 /* InfoPlist.strings in Resources */,
 				CADD6A4F18EB8102001B3378 /* Images.xcassets in Resources */,
+				CAA0097A18EDF5EB007D00F8 /* SWRevealViewController in Resources */,
 				CA1EE14618D24CA400A23A88 /* SUStart.gpx in Resources */,
 				CA0FE38118BC3B0A00533D88 /* Main.storyboard in Resources */,
 				CA646FCF18E9E0F3000D2702 /* New_Design.storyboard in Resources */,

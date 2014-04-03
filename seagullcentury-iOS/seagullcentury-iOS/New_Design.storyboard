@@ -87,18 +87,18 @@
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="topViewControllerStoryboardId" value="HomeNavigationController"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="underLeftViewControllerStoryboardId" value="MenuViewController"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="underRightViewControllerStoryboardId" value="MapSideMenuController"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="underLeftViewControllerStoryboardId" value="MenuViewController"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3iX-sw-cad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="257"/>
+            <point key="canvasLocation" x="551" y="237"/>
         </scene>
         <!--Web Side Menu Controller-->
         <scene sceneID="bmk-DM-vYw">
             <objects>
-                <tableViewController storyboardIdentifier="MapSideMenuController" id="cQg-MU-Hp4" customClass="WebSideMenuController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RearView" id="cQg-MU-Hp4" customClass="WebSideMenuController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qdS-AE-wbC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,9 +126,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="tVm-bm-cVw" kind="custom" customClass="ECSlidingSegue" id="z8v-zL-woX"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -138,10 +135,33 @@
                             <outlet property="delegate" destination="cQg-MU-Hp4" id="7PE-Pa-FLT"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="738-nT-QYP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ql-qE-iMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1107" y="265"/>
+            <point key="canvasLocation" x="2042" y="169"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="ULR-le-1tx">
+            <objects>
+                <viewController id="pZ9-Jh-Z4e" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rpv-yi-Yfi"/>
+                        <viewControllerLayoutGuide type="bottom" id="cCA-55-H7c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xHQ-Tc-Omf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="cQg-MU-Hp4" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="YCc-Qz-iJw"/>
+                        <segue destination="tVm-bm-cVw" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="04V-vU-Jn0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mh-EM-eZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="169"/>
         </scene>
         <!--Home View Controller - Main Menu-->
         <scene sceneID="RnO-vj-CjJ">
@@ -289,7 +309,7 @@
                     <navigationItem key="navigationItem" id="jki-wH-0Rm">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="tS5-1P-AUS">
                             <connections>
-                                <segue destination="XYT-Yu-C6m" kind="unwind" unwindAction="unwindToMainMenu:" id="o77-Ky-Kxj"/>
+                                <segue destination="XYT-Yu-C6m" kind="unwind" unwindAction="unwindToMainMenu:" id="Nvp-GQ-NuQ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="menu-icon" id="ExC-6o-PAV">
@@ -305,7 +325,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g7-ch-5nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XYT-Yu-C6m" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2092" y="973"/>
+            <point key="canvasLocation" x="2222" y="973"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IYM-S1-fu8">
@@ -323,7 +343,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCj-Ps-bhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="973"/>
+            <point key="canvasLocation" x="545" y="967"/>
         </scene>
         <!--Table View Controller - Settings Menu-->
         <scene sceneID="rE2-ub-BtU">
@@ -382,7 +402,7 @@
         <!--Navigation Controller-->
         <scene sceneID="z3E-cq-8JZ">
             <objects>
-                <navigationController storyboardIdentifier="WebNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="tVm-bm-cVw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FrontView" automaticallyAdjustsScrollViewInsets="NO" id="tVm-bm-cVw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w7a-Au-9bi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -395,7 +415,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cgv-aV-TVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="973"/>
+            <point key="canvasLocation" x="1790" y="973"/>
         </scene>
     </scenes>
     <resources>
@@ -407,6 +427,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="F9T-M1-909"/>
+        <segue reference="04V-vU-Jn0"/>
     </inferredMetricsTieBreakers>
 </document>
