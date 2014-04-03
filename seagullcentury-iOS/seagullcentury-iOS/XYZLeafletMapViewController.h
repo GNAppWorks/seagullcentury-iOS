@@ -12,4 +12,6 @@
 
 @property (nonatomic, weak) NSString* urlFromtext;
 
+
+
 @end
