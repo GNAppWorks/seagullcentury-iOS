@@ -8,6 +8,8 @@
 
 #import "XYZLeafletMapViewController.h"
 #import "UIViewController+ECSlidingViewController.h"
+#import "XYZswslideViewController.h"
+#import "HomeViewController.h"
 
 //static const CGFloat kNavBarHeight = 52.0f;
 static const CGFloat kLabelHeight = 20.0f;
@@ -38,6 +40,11 @@ static const CGFloat kAddressHeight = 24.0f;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    urlFromtext = globalurl;
+    
+    NSLog(@"Created the web view with this url %@",globalurl);
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.webView.delegate = self;
@@ -70,6 +77,20 @@ static const CGFloat kAddressHeight = 24.0f;
     
     //[webView loadRequest:urlFromtext];
     [self loadRequestFromString:urlFromtext];
+    
+    
+    
+    /*
+    
+    // Change button color
+    _sidebarButton.tintColor = [UIColor redColor];*/
+    
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(rightRevealToggle:);
+    
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
 }
 

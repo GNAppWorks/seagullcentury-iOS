@@ -22,5 +22,6 @@ typedef NS_ENUM(NSInteger, ROUTE){
     METRIC50
 };
 
+extern NSString* globalurl;
 
 @end
