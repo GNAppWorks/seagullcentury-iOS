@@ -100,7 +100,7 @@
 }
 - (IBAction)menuButtonTapped:(id)sender {
     
-    //Chek the current position
+    //Check the current position
     if([self.slidingViewController currentTopViewPosition]==2){
         //show menu
         [self.slidingViewController anchorTopViewToRightAnimated:YES];

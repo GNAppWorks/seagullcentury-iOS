@@ -7,6 +7,7 @@
 //
 
 #import "XYZLeafletMapViewController.h"
+#import "UIViewController+ECSlidingViewController.h"
 
 //static const CGFloat kNavBarHeight = 52.0f;
 static const CGFloat kLabelHeight = 20.0f;
@@ -154,7 +155,18 @@ static const CGFloat kAddressHeight = 24.0f;
     return YES;
 }
 
-
+- (IBAction)menuButtonTapped:(id)sender {
+    
+    //Chek the current position
+    if([self.slidingViewController currentTopViewPosition]==1){
+        //show menu
+        [self.slidingViewController anchorTopViewToRightAnimated:YES];
+    }else{
+        //Dismiss menu
+        [self.slidingViewController resetTopViewAnimated:YES];
+    }
+    
+}
 
 
 @end
