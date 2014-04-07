@@ -140,7 +140,7 @@ NSString* globalurl = nil;
 - (void) backgroundSetup
 {
     //add background
-    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SU_background_2.png"]];
+    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SU_background.png"]];
     [myView addSubview:background];
     [myView sendSubviewToBack:background];
     myView.contentMode = UIViewContentModeScaleAspectFit;

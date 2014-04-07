@@ -8,14 +8,16 @@
 
 #import "WebSideMenuController.h"
 #import "XYZMenuItem.h"
+#import "XYZswslideViewController.h"
 
 @interface WebSideMenuController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation WebSideMenuController
-
+@synthesize  tableView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -35,6 +37,12 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSLog(@"Side web view loaded");
+    
+    
+    // Set the gesture
+    [tableView addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,7 +7,7 @@
 //
 
 #import "XYZLeafletMapViewController.h"
-#import "UIViewController+ECSlidingViewController.h"
+//#import "UIViewController+ECSlidingViewController.h"
 #import "XYZswslideViewController.h"
 #import "HomeViewController.h"
 
@@ -18,10 +18,10 @@ static const CGFloat kSpacer = 9.0f;
 //static const CGFloat kLabelFontSize = 12.0f;
 static const CGFloat kAddressHeight = 24.0f;
 
-@interface XYZLeafletMapViewController () <UIWebViewDelegate>
+@interface XYZLeafletMapViewController () <UIWebViewDelegate, UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
-@property (weak,nonatomic) UILabel *pageTitle;
+@property (weak, nonatomic) UILabel *pageTitle;
 @property (weak, nonatomic) UILabel *addressField;
 
 - (void)loadRequestFromString:(NSString*)urlString;
@@ -32,14 +32,17 @@ static const CGFloat kAddressHeight = 24.0f;
 
 - (void)informError:(NSError*)error;
 
+@property (assign) BOOL tapped;
 @end
 
 @implementation XYZLeafletMapViewController
 @synthesize urlFromtext, webView;
+@synthesize tapped;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     
     
     urlFromtext = globalurl;
@@ -90,9 +93,47 @@ static const CGFloat kAddressHeight = 24.0f;
     _sidebarButton.action = @selector(rightRevealToggle:);
     
     // Set the gesture
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    //[webView addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    
+    
+    
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self  action:@selector(swipeRightAction:)];
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    swipeRight.delegate = self;
+    
+    swipeRight.numberOfTouchesRequired = 1;
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    swipeRight.delaysTouchesBegan = YES;
+    [webView addGestureRecognizer:swipeRight];
+    
+    
+    
     
 }
+
+
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    
+    
+    return YES;
+}
+
+
+- (void)swipeRightAction:(id)ignored
+{
+    
+    // Send javascript into web view
+    if (tapped) {
+        [self.webView stringByEvaluatingJavaScriptFromString:@"alert('Swipe right');"];
+    }
+    
+    
+    
+    //[webView goBack]; // or just navigate back in web view
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -176,13 +217,15 @@ static const CGFloat kAddressHeight = 24.0f;
     return YES;
 }
 
+
+/***** Function below is pointless Remove later *****/
 - (IBAction)menuButtonTapped:(id)sender {
     
-    if (self.slidingViewController.currentTopViewPosition == ECSlidingViewControllerTopViewPositionCentered) {
-        [self.slidingViewController anchorTopViewToLeftAnimated:YES];
-    } else {
-        [self.slidingViewController resetTopViewAnimated:YES];
-    }
+    //tapped = true;
+    NSLog(@"Tapped is now ");
+    
+    
+    
     
 }
 
