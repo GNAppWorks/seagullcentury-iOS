@@ -1,23 +1,53 @@
 //
-//  WebSideMenuController.m
+//  XYZNewSettingsTableViewController.m
 //  seagullcentury-iOS
 //
-//  Created by Brandon Altvater on 4/3/14.
+//  Created by Brandon Altvater on 4/7/14.
 //  Copyright (c) 2014 Salisbury University. All rights reserved.
 //
 
-#import "WebSideMenuController.h"
+#import "XYZNewSettingsTableViewController.h"
 #import "XYZMenuItem.h"
-#import "XYZswslideViewController.h"
 
-@interface WebSideMenuController ()
+@interface XYZNewSettingsTableViewController ()
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property NSMutableArray *settingsListItem;
 
 @end
 
-@implementation WebSideMenuController
-@synthesize  tableView;
+@implementation XYZNewSettingsTableViewController
+
+
+-(void) loadInitalData
+{
+    // Popluate the array's data in this section
+    
+    XYZMenuItem *item1 = [[XYZMenuItem alloc] init];
+    item1.itemName = @"Seagull Century Website";
+    item1.urlName = @"http://www.seagullcentury.org";
+    [self.settingsListItem addObject:item1];
+    
+    XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
+    item2.itemName = @"Seagull Century Vendors";
+    item2.urlName = @"http:/orgs.salisbury.edu/math";
+    [self.settingsListItem addObject:item2];
+    
+    
+    /*
+     XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
+     item3.itemName = @"Leaf Let Map";
+     item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
+     [self.homeListItems addObject:item3];
+     
+     
+     XYZMenuItem *item4 = [[XYZMenuItem alloc] init];
+     item4.itemName = @"100 Mile Route Map";
+     item4.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
+     [self.homeListItems addObject:item4];
+     */
+    
+}
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,22 +61,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.settingsListItem = [[NSMutableArray alloc] init];
+    [self loadInitalData];
     
     // Uncomment the following line to preserve selection between presentations.
-    //self.clearsSelectionOnViewWillAppear = NO;
+    // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSLog(@"Side web view loaded");
-    
-    
-    // Set the gesture
-    [tableView addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    
-    
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,19 +90,34 @@
 {
 
     // Return the number of rows in the section.
-    return 1;
+    return [self.settingsListItem count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    static NSString *CellIdentifier = @"SettingsList";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+ 
     // Configure the cell...
+ 
+    XYZMenuItem *toDoItem = [self.settingsListItem objectAtIndex:indexPath.row];
+    cell.textLabel.text = toDoItem.itemName;
     
+    
+    
+    UISwitch *aSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+    [cell addSubview:aSwitch];
+    cell.accessoryView = aSwitch;
+    
+    
+    
+    
+ 
+ 
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

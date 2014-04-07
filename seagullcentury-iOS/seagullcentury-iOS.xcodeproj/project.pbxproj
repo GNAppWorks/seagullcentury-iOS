@@ -37,6 +37,7 @@
 		CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */; };
 		CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */; };
 		CADD6A4F18EB8102001B3378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADD6A4E18EB8102001B3378 /* Images.xcassets */; };
+		CAEC0CCA18F335DB000B5486 /* XYZNewSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEC0CC918F335DB000B5486 /* XYZNewSettingsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		CAB9DB2118BD165D00A1E8EE /* XYZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZWebViewController.h; path = ../XYZWebViewController.h; sourceTree = "<group>"; };
 		CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZWebViewController.m; path = ../XYZWebViewController.m; sourceTree = "<group>"; };
 		CADD6A4E18EB8102001B3378 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CAEC0CC818F335DB000B5486 /* XYZNewSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZNewSettingsTableViewController.h; sourceTree = "<group>"; };
+		CAEC0CC918F335DB000B5486 /* XYZNewSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZNewSettingsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 				CAA0097C18EDF900007D00F8 /* XYZTESTViewController.m */,
 				CAA0098718EE0AFC007D00F8 /* XYZswslideViewController.h */,
 				CAA0098818EE0AFC007D00F8 /* XYZswslideViewController.m */,
+				CAEC0CC818F335DB000B5486 /* XYZNewSettingsTableViewController.h */,
+				CAEC0CC918F335DB000B5486 /* XYZNewSettingsTableViewController.m */,
 			);
 			name = "Design 2.0";
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,
 				CAA0097D18EDF900007D00F8 /* XYZTESTViewController.m in Sources */,
+				CAEC0CCA18F335DB000B5486 /* XYZNewSettingsTableViewController.m in Sources */,
 				CA4C391918EA0C900006BEAE /* MainSideMenuController.m in Sources */,
 				CA0FE37A18BC3B0A00533D88 /* main.m in Sources */,
 				CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */,

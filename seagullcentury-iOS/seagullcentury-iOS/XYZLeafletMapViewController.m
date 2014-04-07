@@ -122,7 +122,7 @@ static const CGFloat kAddressHeight = 24.0f;
 
 - (void)swipeRightAction:(id)ignored
 {
-    
+    tapped = true;
     // Send javascript into web view
     if (tapped) {
         [self.webView stringByEvaluatingJavaScriptFromString:@"alert('Swipe right');"];

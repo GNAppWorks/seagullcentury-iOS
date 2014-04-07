@@ -52,7 +52,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ql-qE-iMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="181"/>
+            <point key="canvasLocation" x="3010" y="181"/>
         </scene>
         <!--Zswslide View Controller-->
         <scene sceneID="ULR-le-1tx">
@@ -67,6 +67,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="cQg-MU-Hp4" kind="custom" identifier="sw_right" customClass="SWRevealViewControllerSegue" id="YCc-Qz-iJw"/>
                         <segue destination="tVm-bm-cVw" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="04V-vU-Jn0"/>
@@ -165,7 +167,13 @@
                             <constraint firstItem="7fE-O7-VkY" firstAttribute="top" secondItem="3wD-Hs-Im9" secondAttribute="top" constant="63" id="c5t-ww-YEp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Main Menu" id="2rt-Kv-vO1"/>
+                    <navigationItem key="navigationItem" title="Main Menu" id="2rt-Kv-vO1">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="zRZ-kG-jLk">
+                            <connections>
+                                <segue destination="yUu-kj-Epw" kind="push" id="jT8-7o-Ad7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
@@ -241,7 +249,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCj-Ps-bhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="967"/>
+            <point key="canvasLocation" x="547" y="973"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z3E-cq-8JZ">
@@ -261,9 +269,47 @@
             </objects>
             <point key="canvasLocation" x="2484" y="967"/>
         </scene>
+        <!--New Settings Table View Controller - Map Settings-->
+        <scene sceneID="5lg-4T-kYl">
+            <objects>
+                <tableViewController id="yUu-kj-Epw" customClass="XYZNewSettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ivy-XI-qHv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsList" id="0ad-Yl-AdI">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ad-Yl-AdI" id="Y2E-U3-C7f">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="yUu-kj-Epw" id="62F-Ef-pO6"/>
+                            <outlet property="delegate" destination="yUu-kj-Epw" id="fEo-ws-GGf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Map Settings" id="2dN-FF-Qzc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="PeG-1S-zoK">
+                            <connections>
+                                <segue destination="LVN-nZ-rgn" kind="unwind" unwindAction="unwindToMainMenu:" id="5si-Eg-YwF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u87-S8-CBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="LVN-nZ-rgn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1769" y="181"/>
+        </scene>
     </scenes>
     <resources>
         <image name="reveal-icon" width="22" height="17"/>
+        <image name="settings" width="16" height="16"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
