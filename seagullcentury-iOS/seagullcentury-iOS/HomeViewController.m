@@ -30,6 +30,18 @@
 @synthesize urlRoute;
 NSString* globalurl = nil;
 
+-(void) setDefaults
+{
+    NSUserDefaults *mapDefaults = [NSUserDefaults standardUserDefaults];
+    
+    [mapDefaults setBool:1 forKey:@"speed"];
+    [mapDefaults setBool:0 forKey:@"vendor"];
+    [mapDefaults setBool:1 forKey:@"waypoints"];
+    
+    [mapDefaults synchronize];
+    
+    NSLog(@"Data has been saved\n");
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,6 +57,8 @@ NSString* globalurl = nil;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self backgroundSetup];
+    [self setDefaults];
+    NSLog(@"I am in the main");
     
 }
 - (void)viewDidLayoutSubviews {
@@ -95,18 +109,18 @@ NSString* globalurl = nil;
     // Need to change to live server site on release!!!
     switch (self.routePicker.selectedSegmentIndex) {
         case MILE100:
-            //urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=0";
-            urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=0";
+            urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=0";
+            //urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=0";
             NSLog(@"100 Mile Route Selected");
             break;
         case MILE50:
-            //urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=1";
-            urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=1";
+            urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=1";
+            //urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=1";
             NSLog(@"50 Mile Route Selected");
             break;
         case METRIC100:
-            //urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=2";
-            urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=2";
+            urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=2";
+            //urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=2";
             NSLog(@"100 KM Route Selected");
             break;
         case METRIC50:

@@ -96,7 +96,7 @@ static const CGFloat kAddressHeight = 24.0f;
     //[webView addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     
-    
+    /*
     
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self  action:@selector(swipeRightAction:)];
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
@@ -106,7 +106,7 @@ static const CGFloat kAddressHeight = 24.0f;
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     swipeRight.delaysTouchesBegan = YES;
     [webView addGestureRecognizer:swipeRight];
-    
+    */
     
     
     

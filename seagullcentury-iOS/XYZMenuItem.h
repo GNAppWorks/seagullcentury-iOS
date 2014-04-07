@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString *itemName;
 @property (strong, nonatomic) NSString *urlName;
-@property (assign) BOOL *toggleValue;
+@property (assign) BOOL toggleState;
+@property (assign) int toggleValue;
 
 @end

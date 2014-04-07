@@ -17,34 +17,41 @@
 
 @implementation XYZNewSettingsTableViewController
 
-
 -(void) loadInitalData
 {
     // Popluate the array's data in this section
+    NSUserDefaults *mapDefaults = [NSUserDefaults standardUserDefaults];
     
     XYZMenuItem *item1 = [[XYZMenuItem alloc] init];
     item1.itemName = @"Seagull Century Website";
     item1.urlName = @"http://www.seagullcentury.org";
+    item1.toggleState = [mapDefaults boolForKey:@"speed"]; // Needs to be set from the use Defaults
+    //item1.toggleValue = 1; // Needs to be changed from the user defaults
     [self.settingsListItem addObject:item1];
     
     XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
     item2.itemName = @"Seagull Century Vendors";
     item2.urlName = @"http:/orgs.salisbury.edu/math";
+    item2.toggleState = [mapDefaults boolForKey:@"vendor"];
+    //item2.toggleState = NO;
+    //item2.toggleValue = 0;
     [self.settingsListItem addObject:item2];
     
     
-    /*
-     XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
-     item3.itemName = @"Leaf Let Map";
-     item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
-     [self.homeListItems addObject:item3];
+    
+    XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
+    item3.itemName = @"Leaf Let Map";
+    item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
+    item3.toggleState = [mapDefaults boolForKey:@"waypoints"];
+    [self.settingsListItem addObject:item3];
      
-     
+     /*
      XYZMenuItem *item4 = [[XYZMenuItem alloc] init];
      item4.itemName = @"100 Mile Route Map";
      item4.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
      [self.homeListItems addObject:item4];
      */
+    NSLog(@"I have loaded the settings");
     
 }
 
@@ -63,6 +70,7 @@
     [super viewDidLoad];
     self.settingsListItem = [[NSMutableArray alloc] init];
     [self loadInitalData];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -110,13 +118,52 @@
     [cell addSubview:aSwitch];
     cell.accessoryView = aSwitch;
     
+    [(UISwitch *) cell.accessoryView setOn:toDoItem.toggleState];
+    cell.accessoryView.tag = indexPath.row;
+    [(UISwitch *) cell.accessoryView addTarget:self action:@selector(eventSwitchChanged:) forControlEvents:UIControlEventValueChanged];
     
     
-    
- 
- 
     return cell;
 }
+
+
+-(void) eventSwitchChanged: (id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    UISwitch * theSwitch = (UISwitch *) sender;
+    //BOOL theSwitchisOn = theSwitch.isOn;
+    
+   // NSLog(@"The Bool Value %i",theSwitchisOn);
+    
+    long number = ((UISwitch*) sender).tag;
+    
+    NSLog(@"This is the row that was selected %li",number);
+    
+    switch (number) {
+        case 0:
+            [defaults setBool:theSwitch.isOn forKey:@"speed"];
+            NSLog(@"Changed the speed to value %i", theSwitch.isOn);
+            break;
+        case 1:
+            [defaults setBool:theSwitch.isOn forKey:@"vendor"];
+            NSLog(@"Changed the vender to value %i", theSwitch.isOn);
+            break;
+        case 2:
+            [defaults setBool:theSwitch.isOn forKey:@"waypoints"];
+            NSLog(@"Changed the waypoints to value %i", theSwitch.isOn);
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+    
+    // Change the toggle user default settings in this method
+    
+}
+
 
 
 /*
