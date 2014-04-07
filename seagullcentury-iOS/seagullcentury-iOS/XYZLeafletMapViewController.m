@@ -92,6 +92,7 @@ static const CGFloat kAddressHeight = 24.0f;
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(rightRevealToggle:);
     
+    
     // Set the gesture
     //[webView addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
@@ -212,6 +213,7 @@ static const CGFloat kAddressHeight = 24.0f;
     [alertView show];
 }
 
+
 #pragma mark - Overriden UIViewController methods
 - (BOOL)hidesBottomBarWhenPushed {
     return YES;
@@ -219,15 +221,7 @@ static const CGFloat kAddressHeight = 24.0f;
 
 
 /***** Function below is pointless Remove later *****/
-- (IBAction)menuButtonTapped:(id)sender {
-    
-    //tapped = true;
-    NSLog(@"Tapped is now ");
-    
-    
-    
-    
-}
+
 
 
 - (IBAction)unwindToMapMenuViewController:(UIStoryboardSegue *)segue
