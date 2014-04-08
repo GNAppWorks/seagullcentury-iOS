@@ -36,7 +36,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ql-qE-iMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="301"/>
+            <point key="canvasLocation" x="3004" y="315"/>
         </scene>
         <!--Slide View Controller-->
         <scene sceneID="ULR-le-1tx">
@@ -52,15 +52,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="PhT-LL-rtE"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="cQg-MU-Hp4" kind="custom" identifier="sw_right" customClass="SWRevealViewControllerSegue" id="YCc-Qz-iJw"/>
-                        <segue destination="tVm-bm-cVw" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="04V-vU-Jn0"/>
+                        <segue destination="cQg-MU-Hp4" kind="custom" identifier="sw_right" customClass="SWRevealViewControllerSegue" id="NOG-Tv-LVd"/>
+                        <segue destination="rSD-kL-xZq" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="BEZ-CZ-iY2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mh-EM-eZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1769" y="973"/>
+            <point key="canvasLocation" x="2439" y="973"/>
         </scene>
         <!--Home View Controller - Main Menu-->
         <scene sceneID="RnO-vj-CjJ">
@@ -93,7 +94,7 @@
                                                 </segments>
                                                 <connections>
                                                     <action selector="goToMap:" destination="WVN-Ql-khm" eventType="valueChanged" id="JBr-5q-JhQ"/>
-                                                    <segue destination="pZ9-Jh-Z4e" kind="modal" identifier="toRouteView" id="7vf-3t-xlw"/>
+                                                    <segue destination="BkC-CO-PQD" kind="modal" identifier="toRouteView" id="7vf-3t-xlw"/>
                                                 </connections>
                                             </segmentedControl>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Select A Route" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bg-fj-fAQ">
@@ -215,7 +216,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g7-ch-5nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XYT-Yu-C6m" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3052" y="967"/>
+            <point key="canvasLocation" x="3134" y="989"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IYM-S1-fu8">
@@ -234,24 +235,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCj-Ps-bhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="547" y="973"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="z3E-cq-8JZ">
-            <objects>
-                <navigationController storyboardIdentifier="FrontView" automaticallyAdjustsScrollViewInsets="NO" id="tVm-bm-cVw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w7a-Au-9bi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="rSD-kL-xZq" kind="relationship" relationship="rootViewController" id="gNf-bu-NkV"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cgv-aV-TVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2484" y="967"/>
         </scene>
         <!--New Settings Table View Controller - Map Settings-->
         <scene sceneID="5lg-4T-kYl">
@@ -289,6 +272,24 @@
                 <exit id="LVN-nZ-rgn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1769" y="181"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ydS-6d-Hud">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BkC-CO-PQD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dpu-PG-Uz5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pZ9-Jh-Z4e" kind="relationship" relationship="rootViewController" id="H7f-OY-IWe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xW-Bl-vCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="973"/>
         </scene>
     </scenes>
     <resources>

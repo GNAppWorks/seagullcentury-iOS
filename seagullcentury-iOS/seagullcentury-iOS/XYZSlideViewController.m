@@ -9,12 +9,14 @@
 #import "XYZSlideViewController.h"
 #import "XYZLeafletMapViewController.h"
 
+
 @interface XYZSlideViewController ()
+
 
 @end
 
 @implementation XYZSlideViewController
-
+@synthesize view;
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+
     
 }
 
@@ -48,5 +53,6 @@
      NSLog(@"I AM JESUS!!!");
 }
 */
+
 
 @end

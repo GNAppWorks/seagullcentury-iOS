@@ -68,13 +68,14 @@ static const CGFloat kAddressHeight = 24.0f;
     [navBar addSubview:label];
     self.pageTitle = label;
     
-    /* Create the address bar */
+    /* Create the address bar*/
     CGRect addressFrame = CGRectMake(kMargin, kSpacer * 2.0 + kLabelHeight, labelFrame.size.width - 20, kAddressHeight);
     UILabel *address = [[UILabel alloc] initWithFrame:CGRectOffset(addressFrame, 25, 0) ];
     address.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     address.backgroundColor = [UIColor clearColor];
     address.font = [UIFont systemFontOfSize:16];
     address.textAlignment = NSTextAlignmentLeft;
+    
     //[navBar addSubview:address];
     //self.addressField = address;
     
