@@ -7,7 +7,7 @@
 //
 
 #import "XYZWebViewController.h"
-#import "XYZMenuItem.h"
+#import "XYZMenuItems.h"
 #import "XYZHomeViewController.h"
 
 #define VERTICAL_SHIFT 15

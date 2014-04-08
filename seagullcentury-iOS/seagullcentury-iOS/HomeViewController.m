@@ -10,6 +10,7 @@
 #import "UIViewController+ECSlidingViewController.h"
 #import "XYZLeafletMapViewController.h"
 #import "XYZSlideViewController.h"
+#import "XYZUrlObserver.h"
 
 
 @interface HomeViewController ()
@@ -64,6 +65,10 @@ NSString* globalurl = nil;
     [self setDefaults];
     NSLog(@"I am in the main");
     
+    
+    
+    
+    
 }
 - (void)viewDidLayoutSubviews {
     self.scrollView.contentSize = CGSizeMake(320, 500);
@@ -82,7 +87,7 @@ NSString* globalurl = nil;
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    
+    /*
     if ([segue.identifier isEqualToString:@"toRouteView"])
     {
         //XYZLeafletMapViewController *vc = [[segue.destinationViewController viewControllers] objectAtIndex:0];
@@ -95,7 +100,7 @@ NSString* globalurl = nil;
         
     }
 
-    
+    */
     
      
 
@@ -110,20 +115,23 @@ NSString* globalurl = nil;
 
 - (IBAction)goToMap:(UISegmentedControl *)sender
 {
+    NSUserDefaults *urlDefault = [NSUserDefaults standardUserDefaults];
+    NSString *urlString = [[NSString alloc] init];
+    
     // Need to change to live server site on release!!!
     switch (self.routePicker.selectedSegmentIndex) {
         case MILE100:
-            urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=0";
+            urlString = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=0";
             //urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=0";
             NSLog(@"100 Mile Route Selected");
             break;
         case MILE50:
-            urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=1";
+            urlString = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=1";
             //urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=1";
             NSLog(@"50 Mile Route Selected");
             break;
         case METRIC100:
-            urlRoute = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=2";
+            urlString = @"http://apps.esrgc.org/maps/seagullcentury/index.html?route=2";
             //urlRoute = @"file:///Users/Brandon/Documents/Development/seagullcentury-leaflet/index.html?route=2";
             NSLog(@"100 KM Route Selected");
             break;
@@ -133,6 +141,9 @@ NSString* globalurl = nil;
         default:
             break;
     }
+    [urlDefault setObject:urlString forKey:@"mapURL"];
+   
+    
 }
 - (IBAction)menuButtonTapped:(id)sender {
     

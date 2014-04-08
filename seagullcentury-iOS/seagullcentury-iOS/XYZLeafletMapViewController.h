@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYZLeafletMapViewController : UIViewController
+@class XYZLeafletMapViewController;
 
+
+@interface XYZLeafletMapViewController : UIViewController
 @property (nonatomic, strong) NSString* urlFromtext;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+
+
+
 
 
 @end

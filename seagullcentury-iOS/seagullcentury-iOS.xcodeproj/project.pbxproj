@@ -30,11 +30,13 @@
 		CAA0097D18EDF900007D00F8 /* XYZTESTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0097C18EDF900007D00F8 /* XYZTESTViewController.m */; };
 		CAA0098618EDFDBA007D00F8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0098518EDFDBA007D00F8 /* SWRevealViewController.m */; };
 		CAA0098918EE0AFC007D00F8 /* XYZSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0098818EE0AFC007D00F8 /* XYZSlideViewController.m */; };
+		CAB3293318F45982007402D8 /* SwitchControlItems.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB3293218F45982007402D8 /* SwitchControlItems.m */; };
+		CAB3293618F47629007402D8 /* XYZUrlObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB3293518F47629007402D8 /* XYZUrlObserver.m */; };
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
 		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
 		CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7918BFADB50089C0BB /* MapKit.framework */; };
 		CAB9DB1D18BCFD5000A1E8EE /* XYZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */; };
-		CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */; };
+		CAB9DB2018BD079100A1E8EE /* XYZMenuItems.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB1F18BD079100A1E8EE /* XYZMenuItems.m */; };
 		CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */; };
 		CADD6A4F18EB8102001B3378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADD6A4E18EB8102001B3378 /* Images.xcassets */; };
 		CAEC0CCA18F335DB000B5486 /* XYZNewSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEC0CC918F335DB000B5486 /* XYZNewSettingsTableViewController.m */; };
@@ -89,12 +91,16 @@
 		CAA0098518EDFDBA007D00F8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		CAA0098718EE0AFC007D00F8 /* XYZSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSlideViewController.h; sourceTree = "<group>"; };
 		CAA0098818EE0AFC007D00F8 /* XYZSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZSlideViewController.m; sourceTree = "<group>"; };
+		CAB3293118F45982007402D8 /* SwitchControlItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchControlItems.h; sourceTree = "<group>"; };
+		CAB3293218F45982007402D8 /* SwitchControlItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchControlItems.m; sourceTree = "<group>"; };
+		CAB3293418F47629007402D8 /* XYZUrlObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZUrlObserver.h; sourceTree = "<group>"; };
+		CAB3293518F47629007402D8 /* XYZUrlObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZUrlObserver.m; sourceTree = "<group>"; };
 		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
 		CAB9DB1C18BCFD5000A1E8EE /* XYZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZSettingsViewController.m; sourceTree = "<group>"; };
-		CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZMenuItem.h; path = ../XYZMenuItem.h; sourceTree = "<group>"; };
-		CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZMenuItem.m; path = ../XYZMenuItem.m; sourceTree = "<group>"; };
+		CAB9DB1E18BD079100A1E8EE /* XYZMenuItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZMenuItems.h; path = ../XYZMenuItems.h; sourceTree = "<group>"; };
+		CAB9DB1F18BD079100A1E8EE /* XYZMenuItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZMenuItems.m; path = ../XYZMenuItems.m; sourceTree = "<group>"; };
 		CAB9DB2118BD165D00A1E8EE /* XYZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZWebViewController.h; path = ../XYZWebViewController.h; sourceTree = "<group>"; };
 		CAB9DB2218BD165D00A1E8EE /* XYZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZWebViewController.m; path = ../XYZWebViewController.m; sourceTree = "<group>"; };
 		CADD6A4E18EB8102001B3378 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -177,8 +183,8 @@
 				CA0FE38318BC3B0A00533D88 /* XYZHomeViewController.m */,
 				CA0FE38518BC3B0A00533D88 /* XYZLeafletMapViewController.h */,
 				CA0FE38618BC3B0A00533D88 /* XYZLeafletMapViewController.m */,
-				CAB9DB1E18BD079100A1E8EE /* XYZMenuItem.h */,
-				CAB9DB1F18BD079100A1E8EE /* XYZMenuItem.m */,
+				CAB9DB1E18BD079100A1E8EE /* XYZMenuItems.h */,
+				CAB9DB1F18BD079100A1E8EE /* XYZMenuItems.m */,
 				CA3A8EC918CA70B200CDB866 /* XYZRouteSelectionViewController.h */,
 				CA3A8ECA18CA70B200CDB866 /* XYZRouteSelectionViewController.m */,
 				CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */,
@@ -236,6 +242,10 @@
 				CAA0098818EE0AFC007D00F8 /* XYZSlideViewController.m */,
 				CAEC0CC818F335DB000B5486 /* XYZNewSettingsTableViewController.h */,
 				CAEC0CC918F335DB000B5486 /* XYZNewSettingsTableViewController.m */,
+				CAB3293118F45982007402D8 /* SwitchControlItems.h */,
+				CAB3293218F45982007402D8 /* SwitchControlItems.m */,
+				CAB3293418F47629007402D8 /* XYZUrlObserver.h */,
+				CAB3293518F47629007402D8 /* XYZUrlObserver.m */,
 			);
 			name = "Design 2.0";
 			sourceTree = "<group>";
@@ -379,13 +389,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA0098618EDFDBA007D00F8 /* SWRevealViewController.m in Sources */,
+				CAB3293618F47629007402D8 /* XYZUrlObserver.m in Sources */,
 				CAA0097718EDDE26007D00F8 /* WebSideMenuController.m in Sources */,
 				CAA0098918EE0AFC007D00F8 /* XYZSlideViewController.m in Sources */,
 				CA0FE38418BC3B0A00533D88 /* XYZHomeViewController.m in Sources */,
+				CAB3293318F45982007402D8 /* SwitchControlItems.m in Sources */,
 				CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */,
 				CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */,
 				CA58012718EB2DFE00274DE9 /* HomeViewController.m in Sources */,
-				CAB9DB2018BD079100A1E8EE /* XYZMenuItem.m in Sources */,
+				CAB9DB2018BD079100A1E8EE /* XYZMenuItems.m in Sources */,
 				CA0FE37E18BC3B0A00533D88 /* XYZAppDelegate.m in Sources */,
 				CA0FE38718BC3B0A00533D88 /* XYZLeafletMapViewController.m in Sources */,
 				CAA0097D18EDF900007D00F8 /* XYZTESTViewController.m in Sources */,

@@ -7,10 +7,8 @@
 //
 
 #import "SWRevealViewController.h"
+#import "WebSideMenuController.h"
 
 @interface XYZSlideViewController : SWRevealViewController
-
-//extern NSString* urlFrom;
-
 
 @end

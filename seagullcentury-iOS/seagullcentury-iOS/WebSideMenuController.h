@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SwitchControlItems.h"
+#import "XYZLeafletMapViewController.h"
 
-@interface WebSideMenuController : UITableViewController
+@interface WebSideMenuController : UITableViewController <SwitchControlDelegate>
 
 @end

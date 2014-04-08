@@ -7,7 +7,7 @@
 //
 
 #import "XYZHomeViewController.h"
-#import "XYZMenuItem.h"
+#import "XYZMenuItems.h"
 #import "XYZWebViewController.h"
 
 @interface XYZHomeViewController ()
@@ -24,12 +24,12 @@
 {
     // Popluate the array's data in this section
     
-    XYZMenuItem *item1 = [[XYZMenuItem alloc] init];
+    XYZMenuItems *item1 = [[XYZMenuItems alloc] init];
     item1.itemName = @"Seagull Century Website";
     item1.urlName = @"http://www.seagullcentury.org";
     [self.homeListItems addObject:item1];
     
-    XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
+    XYZMenuItems *item2 = [[XYZMenuItems alloc] init];
     item2.itemName = @"Seagull Century Vendors";
     item2.urlName = @"http:/orgs.salisbury.edu/math";
     [self.homeListItems addObject:item2];
@@ -95,7 +95,7 @@
     
     // Configure the cell...
     
-    XYZMenuItem *toDoItem = [self.homeListItems objectAtIndex:indexPath.row];
+    XYZMenuItems *toDoItem = [self.homeListItems objectAtIndex:indexPath.row];
     cell.textLabel.text = toDoItem.itemName;
     
     
@@ -153,7 +153,7 @@
          XYZWebViewController *transferDestinationView = [[segue.destinationViewController viewControllers] objectAtIndex:0];
          
          NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-         XYZMenuItem *item4 = [[XYZMenuItem alloc] init];
+         XYZMenuItems *item4 = [[XYZMenuItems alloc] init];
          
          item4 = [self.homeListItems objectAtIndex:indexPath.row];
          NSLog(@"Item URL STRING %@", item4.urlName);

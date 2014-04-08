@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
-#import "XYZMenuItem.h"
+#import "XYZMenuItems.h"
 
 @interface HomeViewController : UIViewController
 

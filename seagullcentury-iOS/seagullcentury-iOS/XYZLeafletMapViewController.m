@@ -11,6 +11,8 @@
 #import "XYZSlideViewController.h"
 #import "HomeViewController.h"
 
+
+
 //static const CGFloat kNavBarHeight = 52.0f;
 static const CGFloat kLabelHeight = 20.0f;
 static const CGFloat kMargin = 10.0f;
@@ -39,6 +41,7 @@ static const CGFloat kAddressHeight = 24.0f;
 @synthesize urlFromtext, webView;
 @synthesize tapped;
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -46,6 +49,7 @@ static const CGFloat kAddressHeight = 24.0f;
     
     
     urlFromtext = globalurl;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     NSLog(@"Created the web view with this url %@",globalurl);
 	// Do any additional setup after loading the view, typically from a nib.
@@ -79,7 +83,8 @@ static const CGFloat kAddressHeight = 24.0f;
     //self.addressField = address;
     
     //[webView loadRequest:urlFromtext];
-    [self loadRequestFromString:urlFromtext];
+    //[self loadRequestFromString:urlFromtext];
+    [self loadRequestFromString:[defaults stringForKey:@"mapURL"]];
     
     
     
@@ -108,6 +113,7 @@ static const CGFloat kAddressHeight = 24.0f;
     swipeRight.delaysTouchesBegan = YES;
     [webView addGestureRecognizer:swipeRight];
     */
+    
     
     
     
@@ -218,9 +224,5 @@ static const CGFloat kAddressHeight = 24.0f;
 - (BOOL)hidesBottomBarWhenPushed {
     return YES;
 }
-
-
-
-
 
 @end

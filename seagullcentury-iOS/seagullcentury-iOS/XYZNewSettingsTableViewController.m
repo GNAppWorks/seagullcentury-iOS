@@ -7,7 +7,7 @@
 //
 
 #import "XYZNewSettingsTableViewController.h"
-#import "XYZMenuItem.h"
+#import "XYZMenuItems.h"
 
 @interface XYZNewSettingsTableViewController ()
 
@@ -22,19 +22,19 @@
     // Popluate the array's data in this section
     NSUserDefaults *mapDefaults = [NSUserDefaults standardUserDefaults];
     
-    XYZMenuItem *item1 = [[XYZMenuItem alloc] init];
+    XYZMenuItems *item1 = [[XYZMenuItems alloc] init];
     item1.itemName = [mapDefaults objectForKey:@"speedText"];
     item1.urlName = @"http://www.seagullcentury.org";
     item1.toggleState = [mapDefaults boolForKey:@"speed"];
     [self.settingsListItem addObject:item1];
     
-    XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
+    XYZMenuItems *item2 = [[XYZMenuItems alloc] init];
     item2.itemName = [mapDefaults objectForKey:@"vendorText"];
     item2.urlName = @"http:/orgs.salisbury.edu/math";
     item2.toggleState = [mapDefaults boolForKey:@"vendor"];
     [self.settingsListItem addObject:item2];
     
-    XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
+    XYZMenuItems *item3 = [[XYZMenuItems alloc] init];
     item3.itemName = [mapDefaults objectForKey:@"waypointText"];
     item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
     item3.toggleState = [mapDefaults boolForKey:@"waypoints"];
@@ -104,7 +104,7 @@
  
     // Configure the cell...
  
-    XYZMenuItem *toDoItem = [self.settingsListItem objectAtIndex:indexPath.row];
+    XYZMenuItems *toDoItem = [self.settingsListItem objectAtIndex:indexPath.row];
     cell.textLabel.text = toDoItem.itemName;
     
     

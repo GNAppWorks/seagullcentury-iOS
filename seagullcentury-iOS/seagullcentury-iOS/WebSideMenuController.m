@@ -7,13 +7,13 @@
 //
 
 #import "WebSideMenuController.h"
-#import "XYZMenuItem.h"
+#import "XYZMenuItems.h"
 #import "XYZSlideViewController.h"
-#import "XYZLeafletMapViewController.h"
 
 @interface WebSideMenuController ()
 
 @property NSMutableArray *settingsListItem;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableWebView;
 
 @end
@@ -26,13 +26,13 @@
     // Popluate the array's data in this section
     NSUserDefaults *mapDefaults = [NSUserDefaults standardUserDefaults];
     
-    XYZMenuItem *item1 = [[XYZMenuItem alloc] init];
+    XYZMenuItems *item1 = [[XYZMenuItems alloc] init];
     item1.itemName = [mapDefaults objectForKey:@"speedText"];
     item1.urlName = @"http://www.seagullcentury.org";
     item1.toggleState = [mapDefaults boolForKey:@"speed"];
     [self.settingsListItem addObject:item1];
     
-    XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
+    XYZMenuItems *item2 = [[XYZMenuItems alloc] init];
     item2.itemName = [mapDefaults objectForKey:@"vendorText"];
     item2.urlName = @"http:/orgs.salisbury.edu/math";
     item2.toggleState = [mapDefaults boolForKey:@"vendor"];
@@ -40,7 +40,7 @@
     
     
     
-    XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
+    XYZMenuItems *item3 = [[XYZMenuItems alloc] init];
     item3.itemName = [mapDefaults objectForKey:@"waypointText"];
     item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
     item3.toggleState = [mapDefaults boolForKey:@"waypoints"];
@@ -114,11 +114,11 @@
     
     // Configure the cell...
     
-    XYZMenuItem *toDoItem = [self.settingsListItem objectAtIndex:indexPath.row];
+    XYZMenuItems *toDoItem = [self.settingsListItem objectAtIndex:indexPath.row];
     cell.textLabel.text = toDoItem.itemName;
     
     
-    
+    /*
     UISwitch *aSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
     aSwitch.onTintColor = [UIColor colorWithRed:143/255.0f green:17/255.0f blue:17/255.0f alpha:1];
     [cell addSubview:aSwitch];
@@ -127,6 +127,19 @@
     [(UISwitch *) cell.accessoryView setOn:toDoItem.toggleState];
     cell.accessoryView.tag = indexPath.row;
     [(UISwitch *) cell.accessoryView addTarget:self action:@selector(eventSwitchChanged:) forControlEvents:UIControlEventValueChanged];
+    */
+    
+    SwitchControlItems *bSwitch = [[SwitchControlItems alloc] initWithFrame:CGRectZero];
+    
+    bSwitch.onTintColor = [UIColor colorWithRed:0/255.0f green:17/255.0f blue:17/255.0f alpha:1];
+    [cell addSubview:bSwitch];
+    cell.accessoryView = bSwitch;
+    
+    [(SwitchControlItems *) cell.accessoryView setOn:toDoItem.toggleState];
+    cell.accessoryView.tag = indexPath.row;
+    [(SwitchControlItems *) cell.accessoryView addTarget:self action:@selector(eventSwitchChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    
     
     
     return cell;
@@ -137,12 +150,12 @@
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    UISwitch * theSwitch = (UISwitch *) sender;
+    SwitchControlItems *theSwitch = (SwitchControlItems *) sender;
     //BOOL theSwitchisOn = theSwitch.isOn;
     
     // NSLog(@"The Bool Value %i",theSwitchisOn);
     
-    long number = ((UISwitch*) sender).tag;
+    long number = ((SwitchControlItems*) sender).tag;
     
     NSLog(@"This is the row that was selected %li",number);
     
@@ -164,9 +177,10 @@
             break;
     }
     
-    [[NSURLCache sharedURLCache] removeAllCachedResponses];
     
     NSLog(@"In side menu slider methods");
+    [self reloadFromMenu];
+    
     
     // Change the toggle user default settings in this method
     
@@ -222,5 +236,20 @@
  // Pass the selected object to the new view controller.
  }
  */
+
+-(void) SwitchControlChanged:(SwitchControlItems *)SwitchControlItems withValue:(BOOL)value
+{
+   
+}
+
+-(BOOL) startPosition:(SwitchControlItems *)SwitchControlItems
+{
+    return SwitchControlItems.on;
+}
+
+-(void) reloadFromMenu
+{
+     NSLog(@"reloadWebView has been called inside Side Menu");
+}
 
 @end
