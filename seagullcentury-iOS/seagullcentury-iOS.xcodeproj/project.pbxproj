@@ -29,7 +29,7 @@
 		CAA0097718EDDE26007D00F8 /* WebSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0097618EDDE26007D00F8 /* WebSideMenuController.m */; };
 		CAA0097D18EDF900007D00F8 /* XYZTESTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0097C18EDF900007D00F8 /* XYZTESTViewController.m */; };
 		CAA0098618EDFDBA007D00F8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0098518EDFDBA007D00F8 /* SWRevealViewController.m */; };
-		CAA0098918EE0AFC007D00F8 /* XYZswslideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0098818EE0AFC007D00F8 /* XYZswslideViewController.m */; };
+		CAA0098918EE0AFC007D00F8 /* XYZSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA0098818EE0AFC007D00F8 /* XYZSlideViewController.m */; };
 		CAB70A7718BFAD920089C0BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7618BFAD920089C0BB /* CoreLocation.framework */; };
 		CAB70A7818BFADA10089C0BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0FE36F18BC3B0A00533D88 /* CoreGraphics.framework */; };
 		CAB70A7A18BFADB50089C0BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB70A7918BFADB50089C0BB /* MapKit.framework */; };
@@ -87,8 +87,8 @@
 		CAA0097C18EDF900007D00F8 /* XYZTESTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTESTViewController.m; sourceTree = "<group>"; };
 		CAA0098418EDFDBA007D00F8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CAA0098518EDFDBA007D00F8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		CAA0098718EE0AFC007D00F8 /* XYZswslideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZswslideViewController.h; sourceTree = "<group>"; };
-		CAA0098818EE0AFC007D00F8 /* XYZswslideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZswslideViewController.m; sourceTree = "<group>"; };
+		CAA0098718EE0AFC007D00F8 /* XYZSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSlideViewController.h; sourceTree = "<group>"; };
+		CAA0098818EE0AFC007D00F8 /* XYZSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZSlideViewController.m; sourceTree = "<group>"; };
 		CAB70A7618BFAD920089C0BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAB70A7918BFADB50089C0BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB9DB1B18BCFD5000A1E8EE /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
@@ -232,8 +232,8 @@
 				CAA0097618EDDE26007D00F8 /* WebSideMenuController.m */,
 				CAA0097B18EDF900007D00F8 /* XYZTESTViewController.h */,
 				CAA0097C18EDF900007D00F8 /* XYZTESTViewController.m */,
-				CAA0098718EE0AFC007D00F8 /* XYZswslideViewController.h */,
-				CAA0098818EE0AFC007D00F8 /* XYZswslideViewController.m */,
+				CAA0098718EE0AFC007D00F8 /* XYZSlideViewController.h */,
+				CAA0098818EE0AFC007D00F8 /* XYZSlideViewController.m */,
 				CAEC0CC818F335DB000B5486 /* XYZNewSettingsTableViewController.h */,
 				CAEC0CC918F335DB000B5486 /* XYZNewSettingsTableViewController.m */,
 			);
@@ -380,7 +380,7 @@
 			files = (
 				CAA0098618EDFDBA007D00F8 /* SWRevealViewController.m in Sources */,
 				CAA0097718EDDE26007D00F8 /* WebSideMenuController.m in Sources */,
-				CAA0098918EE0AFC007D00F8 /* XYZswslideViewController.m in Sources */,
+				CAA0098918EE0AFC007D00F8 /* XYZSlideViewController.m in Sources */,
 				CA0FE38418BC3B0A00533D88 /* XYZHomeViewController.m in Sources */,
 				CA3A8ECB18CA70B200CDB866 /* XYZRouteSelectionViewController.m in Sources */,
 				CAB9DB2318BD165D00A1E8EE /* XYZWebViewController.m in Sources */,

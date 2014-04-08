@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "XYZMenuItem.h"
 
 @interface HomeViewController : UIViewController
 
@@ -23,5 +24,6 @@ typedef NS_ENUM(NSInteger, ROUTE){
 };
 
 extern NSString* globalurl;
+
 
 @end

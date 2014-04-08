@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 #import "UIViewController+ECSlidingViewController.h"
 #import "XYZLeafletMapViewController.h"
-#import "XYZswslideViewController.h"
+#import "XYZSlideViewController.h"
 
 
 @interface HomeViewController ()
@@ -37,6 +37,10 @@ NSString* globalurl = nil;
     [mapDefaults setBool:1 forKey:@"speed"];
     [mapDefaults setBool:0 forKey:@"vendor"];
     [mapDefaults setBool:1 forKey:@"waypoints"];
+    
+    [mapDefaults setObject:@"Speed" forKey:@"speedText"];
+    [mapDefaults setObject:@"Vendors" forKey:@"vendorText"];
+    [mapDefaults setObject:@"Waypoints" forKey:@"waypointText"];
     
     [mapDefaults synchronize];
     

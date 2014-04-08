@@ -8,7 +8,8 @@
 
 #import "WebSideMenuController.h"
 #import "XYZMenuItem.h"
-#import "XYZswslideViewController.h"
+#import "XYZSlideViewController.h"
+#import "XYZLeafletMapViewController.h"
 
 @interface WebSideMenuController ()
 
@@ -26,24 +27,21 @@
     NSUserDefaults *mapDefaults = [NSUserDefaults standardUserDefaults];
     
     XYZMenuItem *item1 = [[XYZMenuItem alloc] init];
-    item1.itemName = @"Seagull Century Website";
+    item1.itemName = [mapDefaults objectForKey:@"speedText"];
     item1.urlName = @"http://www.seagullcentury.org";
-    item1.toggleState = [mapDefaults boolForKey:@"speed"]; // Needs to be set from the use Defaults
-    //item1.toggleValue = 1; // Needs to be changed from the user defaults
+    item1.toggleState = [mapDefaults boolForKey:@"speed"];
     [self.settingsListItem addObject:item1];
     
     XYZMenuItem *item2 = [[XYZMenuItem alloc] init];
-    item2.itemName = @"Seagull Century Vendors";
+    item2.itemName = [mapDefaults objectForKey:@"vendorText"];
     item2.urlName = @"http:/orgs.salisbury.edu/math";
     item2.toggleState = [mapDefaults boolForKey:@"vendor"];
-    //item2.toggleState = NO;
-    //item2.toggleValue = 0;
     [self.settingsListItem addObject:item2];
     
     
     
     XYZMenuItem *item3 = [[XYZMenuItem alloc] init];
-    item3.itemName = @"Leaf Let Map";
+    item3.itemName = [mapDefaults objectForKey:@"waypointText"];
     item3.urlName = @"http://fairview.salisbury.edu/websites/exercise/";
     item3.toggleState = [mapDefaults boolForKey:@"waypoints"];
     [self.settingsListItem addObject:item3];
@@ -81,6 +79,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     NSLog(@"Side Menu Loaded");
+    
     // Set the gesture
     [tableWebView addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
@@ -121,6 +120,7 @@
     
     
     UISwitch *aSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+    aSwitch.onTintColor = [UIColor colorWithRed:143/255.0f green:17/255.0f blue:17/255.0f alpha:1];
     [cell addSubview:aSwitch];
     cell.accessoryView = aSwitch;
     
@@ -164,7 +164,9 @@
             break;
     }
     
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
     
+    NSLog(@"In side menu slider methods");
     
     // Change the toggle user default settings in this method
     

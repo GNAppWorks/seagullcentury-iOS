@@ -8,7 +8,7 @@
 
 #import "SWRevealViewController.h"
 
-@interface XYZswslideViewController : SWRevealViewController
+@interface XYZSlideViewController : SWRevealViewController
 
 //extern NSString* urlFrom;
 

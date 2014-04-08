@@ -8,7 +8,7 @@
 
 #import "XYZLeafletMapViewController.h"
 //#import "UIViewController+ECSlidingViewController.h"
-#import "XYZswslideViewController.h"
+#import "XYZSlideViewController.h"
 #import "HomeViewController.h"
 
 //static const CGFloat kNavBarHeight = 52.0f;
@@ -220,14 +220,7 @@ static const CGFloat kAddressHeight = 24.0f;
 }
 
 
-/***** Function below is pointless Remove later *****/
 
-
-
-- (IBAction)unwindToMapMenuViewController:(UIStoryboardSegue *)segue
-{
-    
-}
 
 
 @end

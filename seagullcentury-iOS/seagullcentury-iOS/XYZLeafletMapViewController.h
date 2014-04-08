@@ -12,10 +12,7 @@
 
 @property (nonatomic, strong) NSString* urlFromtext;
 
-- (IBAction)unwindToMapMenuViewController:(UIStoryboardSegue *)segue;
-
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
-
 
 
 @end

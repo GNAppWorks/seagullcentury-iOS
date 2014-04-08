@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.39356181569999998" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WebSettingsList" id="Vh8-bc-VVA">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="5" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="WebSettingsList" id="Vh8-bc-VVA">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="Vh8-bc-VVA" id="DoP-xc-xc0">
@@ -36,12 +36,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ql-qE-iMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3010" y="181"/>
+            <point key="canvasLocation" x="2484" y="301"/>
         </scene>
-        <!--Zswslide View Controller-->
+        <!--Slide View Controller-->
         <scene sceneID="ULR-le-1tx">
             <objects>
-                <viewController id="pZ9-Jh-Z4e" customClass="XYZswslideViewController" sceneMemberID="viewController">
+                <viewController id="pZ9-Jh-Z4e" customClass="XYZSlideViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rpv-yi-Yfi"/>
                         <viewControllerLayoutGuide type="bottom" id="cCA-55-H7c"/>
@@ -175,7 +175,7 @@
         <!--Leaflet Map View Controller-->
         <scene sceneID="GdP-Eh-5f8">
             <objects>
-                <viewController id="rSD-kL-xZq" customClass="XYZLeafletMapViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewBoard" id="rSD-kL-xZq" customClass="XYZLeafletMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tAh-xp-FUG"/>
                         <viewControllerLayoutGuide type="bottom" id="dml-WS-fR3"/>
